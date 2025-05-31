@@ -9,9 +9,9 @@ export type UploadKyeroPropertiesParams = {
     /**
      * Start date for property export (ISO format)
      */
-    'start-date': string;
+    "start-date": string;
     /**
      * End date for property export (ISO format)
      */
-    'end-date': string;
+    "end-date": string;
 };

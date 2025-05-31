@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type FilterShowingStepSequenceBefore = typeof FilterShowingStepSequenceBefore[keyof typeof FilterShowingStepSequenceBefore];
+export type FilterShowingStepSequenceBefore = (typeof FilterShowingStepSequenceBefore)[keyof typeof FilterShowingStepSequenceBefore];
 export declare const FilterShowingStepSequenceBefore: {
     readonly INIT_GROUP: "INIT_GROUP";
     readonly END_GROUP: "END_GROUP";

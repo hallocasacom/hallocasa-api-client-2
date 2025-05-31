@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type PropertyFieldData2Type = typeof PropertyFieldData2Type[keyof typeof PropertyFieldData2Type];
+export type PropertyFieldData2Type = (typeof PropertyFieldData2Type)[keyof typeof PropertyFieldData2Type];
 export declare const PropertyFieldData2Type: {
     readonly SAME: "SAME";
     readonly INT: "INT";

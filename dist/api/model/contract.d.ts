@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { User } from './user';
+import type { User } from "./user";
 export interface Contract {
     legalOwner?: User;
     counterParty?: User;

@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { Property } from './property';
+import type { Property } from "./property";
 export interface PropertyFilterResult {
     count?: number;
     propertyList?: Property[];

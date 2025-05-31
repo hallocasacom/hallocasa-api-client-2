@@ -10,9 +10,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ConversationSummaryChatAllowanceType = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.ConversationSummaryChatAllowanceType = {
-    REJECTED: 'REJECTED',
-    ACCEPTED: 'ACCEPTED',
-    PENDING: 'PENDING',
-    BLOCKED: 'BLOCKED',
-    SILENCED: 'SILENCED',
+    REJECTED: "REJECTED",
+    ACCEPTED: "ACCEPTED",
+    PENDING: "PENDING",
+    BLOCKED: "BLOCKED",
+    SILENCED: "SILENCED",
 };

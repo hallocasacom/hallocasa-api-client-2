@@ -10,7 +10,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UpdateGroupMembershipStatus1Status = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.UpdateGroupMembershipStatus1Status = {
-    ACCEPTED: 'ACCEPTED',
-    REJECTED: 'REJECTED',
-    REMOVED: 'REMOVED',
+    ACCEPTED: "ACCEPTED",
+    REJECTED: "REJECTED",
+    REMOVED: "REMOVED",
 };

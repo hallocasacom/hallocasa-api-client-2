@@ -5,16 +5,18 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { AlertUserAlertType } from './alertUserAlertType';
-import type { AlertAlertCriteria } from './alertAlertCriteria';
-import type { AlertResult } from './alertResult';
+import type { AlertUserAlertType } from "./alertUserAlertType";
+import type { AlertAlertCriteria } from "./alertAlertCriteria";
+import type { AlertResult } from "./alertResult";
 export interface Alert {
     id?: number;
     userId?: number;
     userAlertType?: AlertUserAlertType;
+    /** Alert criteria in JSON format */
     alertCriteria?: AlertAlertCriteria;
     allowBrokerContact?: boolean;
     lastNotification?: string;
+    /** Alert result data in JSON format */
     result?: AlertResult;
     newsletterOwnerId?: number;
 }

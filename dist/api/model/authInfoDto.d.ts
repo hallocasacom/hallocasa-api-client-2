@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { UserDto } from './userDto';
-import type { SecurityToken } from './securityToken';
+import type { UserDto } from "./userDto";
+import type { SecurityToken } from "./securityToken";
 export interface AuthInfoDto {
     user?: UserDto;
     securityToken?: SecurityToken;

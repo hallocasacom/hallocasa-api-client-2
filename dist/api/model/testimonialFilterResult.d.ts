@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { Testimonial } from './testimonial';
+import type { Testimonial } from "./testimonial";
 export interface TestimonialFilterResult {
     count?: number;
     testimonialList?: Testimonial[];

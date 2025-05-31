@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type AlertUserAlertType = typeof AlertUserAlertType[keyof typeof AlertUserAlertType];
+export type AlertUserAlertType = (typeof AlertUserAlertType)[keyof typeof AlertUserAlertType];
 export declare const AlertUserAlertType: {
     readonly PROPERTY: "PROPERTY";
 };

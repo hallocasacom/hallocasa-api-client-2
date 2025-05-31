@@ -5,9 +5,9 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { NotificationBodyValueType } from './notificationBodyValueType';
+/**
+ * Notification body data in JSON format
+ */
 export type NotificationBody = {
-    valueType?: NotificationBodyValueType;
-    empty?: boolean;
-    [key: string]: JsonValue;
+    [key: string]: unknown;
 };

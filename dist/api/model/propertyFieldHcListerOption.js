@@ -10,5 +10,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.PropertyFieldHcListerOption = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.PropertyFieldHcListerOption = {
-    PROPERTY_TYPE: 'PROPERTY_TYPE',
+    PROPERTY_TYPE: "PROPERTY_TYPE",
 };

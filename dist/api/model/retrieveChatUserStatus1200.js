@@ -10,6 +10,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RetrieveChatUserStatus1200 = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.RetrieveChatUserStatus1200 = {
-    OFFLINE: 'OFFLINE',
-    ONLINE: 'ONLINE',
+    OFFLINE: "OFFLINE",
+    ONLINE: "ONLINE",
 };

@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type HcFilterChoice = typeof HcFilterChoice[keyof typeof HcFilterChoice];
+export type HcFilterChoice = (typeof HcFilterChoice)[keyof typeof HcFilterChoice];
 export declare const HcFilterChoice: {
     readonly SHOW: "SHOW";
     readonly HIDE: "HIDE";

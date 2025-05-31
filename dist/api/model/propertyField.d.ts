@@ -5,15 +5,15 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { PropertyFieldType } from './propertyFieldType';
-import type { PropertyFieldValueType } from './propertyFieldValueType';
-import type { PropertyFieldValue } from './propertyFieldValue';
-import type { DropdownOptionGroup } from './dropdownOptionGroup';
-import type { PropertyFieldTextType } from './propertyFieldTextType';
-import type { PropertyFieldData1Type } from './propertyFieldData1Type';
-import type { PropertyFieldData2Type } from './propertyFieldData2Type';
-import type { PropertyFieldData3Type } from './propertyFieldData3Type';
-import type { PropertyFieldHcListerOption } from './propertyFieldHcListerOption';
+import type { PropertyFieldType } from "./propertyFieldType";
+import type { PropertyFieldValueType } from "./propertyFieldValueType";
+import type { PropertyFieldValue } from "./propertyFieldValue";
+import type { DropdownOptionGroup } from "./dropdownOptionGroup";
+import type { PropertyFieldTextType } from "./propertyFieldTextType";
+import type { PropertyFieldData1Type } from "./propertyFieldData1Type";
+import type { PropertyFieldData2Type } from "./propertyFieldData2Type";
+import type { PropertyFieldData3Type } from "./propertyFieldData3Type";
+import type { PropertyFieldHcListerOption } from "./propertyFieldHcListerOption";
 export interface PropertyField {
     id: number;
     name?: string;

@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { StripeEventData } from './stripeEventData';
+import type { StripeEventData } from "./stripeEventData";
 export interface StripeEvent {
     id?: string;
     type?: string;

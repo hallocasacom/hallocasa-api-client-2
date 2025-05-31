@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { DropdownOptionParentInfo } from './dropdownOptionParentInfo';
+import type { DropdownOptionParentInfo } from "./dropdownOptionParentInfo";
 export interface DropdownOption {
     optionId?: number;
     name?: string;

@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { Language } from './language';
+import type { Language } from "./language";
 export interface UserLanguage {
     language?: Language;
     isMainLanguage?: boolean;

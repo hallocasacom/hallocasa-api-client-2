@@ -5,9 +5,9 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { PropertyFilterEntry } from './propertyFilterEntry';
-import type { CurrencyAmmount } from './currencyAmmount';
-import type { DropdownOption } from './dropdownOption';
+import type { PropertyFilterEntry } from "./propertyFilterEntry";
+import type { CurrencyAmmount } from "./currencyAmmount";
+import type { DropdownOption } from "./dropdownOption";
 export interface PropertyFilterSubmission {
     apply?: boolean;
     propertyFilter: PropertyFilterEntry;

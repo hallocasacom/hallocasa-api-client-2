@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type PropertyPublicationState = typeof PropertyPublicationState[keyof typeof PropertyPublicationState];
+export type PropertyPublicationState = (typeof PropertyPublicationState)[keyof typeof PropertyPublicationState];
 export declare const PropertyPublicationState: {
     readonly AVAILABLE: "AVAILABLE";
     readonly RENTED: "RENTED";

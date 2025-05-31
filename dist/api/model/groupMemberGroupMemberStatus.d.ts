@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type GroupMemberGroupMemberStatus = typeof GroupMemberGroupMemberStatus[keyof typeof GroupMemberGroupMemberStatus];
+export type GroupMemberGroupMemberStatus = (typeof GroupMemberGroupMemberStatus)[keyof typeof GroupMemberGroupMemberStatus];
 export declare const GroupMemberGroupMemberStatus: {
     readonly INVITED: "INVITED";
     readonly REQUESTED: "REQUESTED";

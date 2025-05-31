@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { PropertyFieldValueSpec } from './propertyFieldValueSpec';
+import type { PropertyFieldValueSpec } from "./propertyFieldValueSpec";
 export interface PropertyFieldValue {
     bdid?: number;
     identifier?: number;

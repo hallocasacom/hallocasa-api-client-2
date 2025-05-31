@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type UserSubscriptionDtoStatus = typeof UserSubscriptionDtoStatus[keyof typeof UserSubscriptionDtoStatus];
+export type UserSubscriptionDtoStatus = (typeof UserSubscriptionDtoStatus)[keyof typeof UserSubscriptionDtoStatus];
 export declare const UserSubscriptionDtoStatus: {
     readonly ACTIVE: "ACTIVE";
     readonly INACTIVE: "INACTIVE";

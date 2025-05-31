@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type CheckoutSessionDtoStatus = typeof CheckoutSessionDtoStatus[keyof typeof CheckoutSessionDtoStatus];
+export type CheckoutSessionDtoStatus = (typeof CheckoutSessionDtoStatus)[keyof typeof CheckoutSessionDtoStatus];
 export declare const CheckoutSessionDtoStatus: {
     readonly IN_PROCESS: "IN_PROCESS";
     readonly SUCCESS: "SUCCESS";

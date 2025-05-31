@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { User } from './user';
+import type { User } from "./user";
 export interface Attachment {
     userFrom?: User;
     userTo?: User;

@@ -5,16 +5,16 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { Language } from './language';
-import type { CountryTelephonePrefix } from './countryTelephonePrefix';
-import type { UserType } from './userType';
-import type { UserLanguage } from './userLanguage';
-import type { UserDescription } from './userDescription';
-import type { Country } from './country';
-import type { GeoPlace } from './geoPlace';
-import type { GooglePlaceReview } from './googlePlaceReview';
-import type { UserSkill } from './userSkill';
-import type { Brokerage } from './brokerage';
+import type { Language } from "./language";
+import type { CountryTelephonePrefix } from "./countryTelephonePrefix";
+import type { UserType } from "./userType";
+import type { UserLanguage } from "./userLanguage";
+import type { UserDescription } from "./userDescription";
+import type { Country } from "./country";
+import type { GeoPlace } from "./geoPlace";
+import type { GooglePlaceReview } from "./googlePlaceReview";
+import type { UserSkill } from "./userSkill";
+import type { Brokerage } from "./brokerage";
 export interface SkilledUser {
     language?: Language;
     /**

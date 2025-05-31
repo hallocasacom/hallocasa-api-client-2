@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type SubscriptionPriceDtoRenewalType = typeof SubscriptionPriceDtoRenewalType[keyof typeof SubscriptionPriceDtoRenewalType];
+export type SubscriptionPriceDtoRenewalType = (typeof SubscriptionPriceDtoRenewalType)[keyof typeof SubscriptionPriceDtoRenewalType];
 export declare const SubscriptionPriceDtoRenewalType: {
     readonly DAILY: "DAILY";
     readonly WEEKLY: "WEEKLY";

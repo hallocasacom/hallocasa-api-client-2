@@ -10,6 +10,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserSubscriptionDtoStatus = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.UserSubscriptionDtoStatus = {
-    ACTIVE: 'ACTIVE',
-    INACTIVE: 'INACTIVE',
+    ACTIVE: "ACTIVE",
+    INACTIVE: "INACTIVE",
 };

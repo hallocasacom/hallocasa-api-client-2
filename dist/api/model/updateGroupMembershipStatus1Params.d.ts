@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { UpdateGroupMembershipStatus1Status } from './updateGroupMembershipStatus1Status';
+import type { UpdateGroupMembershipStatus1Status } from "./updateGroupMembershipStatus1Status";
 export type UpdateGroupMembershipStatus1Params = {
     /**
      * List of user IDs to update status

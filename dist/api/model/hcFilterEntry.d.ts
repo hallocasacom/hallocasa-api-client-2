@@ -5,13 +5,13 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { HcFilterTypeEntry } from './hcFilterTypeEntry';
-import type { HcFilterNature } from './hcFilterNature';
-import type { FilterShowingStep } from './filterShowingStep';
-import type { HcFilter } from './hcFilter';
-import type { HcFilterEntryChoice } from './hcFilterEntryChoice';
-import type { HcFilterEntryFilterWorkerOption } from './hcFilterEntryFilterWorkerOption';
-import type { DropdownOptionGroup } from './dropdownOptionGroup';
+import type { HcFilterTypeEntry } from "./hcFilterTypeEntry";
+import type { HcFilterNature } from "./hcFilterNature";
+import type { FilterShowingStep } from "./filterShowingStep";
+import type { HcFilter } from "./hcFilter";
+import type { HcFilterEntryChoice } from "./hcFilterEntryChoice";
+import type { HcFilterEntryFilterWorkerOption } from "./hcFilterEntryFilterWorkerOption";
+import type { DropdownOptionGroup } from "./dropdownOptionGroup";
 export interface HcFilterEntry {
     id?: number;
     name?: string;

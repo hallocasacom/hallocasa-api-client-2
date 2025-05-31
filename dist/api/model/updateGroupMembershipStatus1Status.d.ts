@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type UpdateGroupMembershipStatus1Status = typeof UpdateGroupMembershipStatus1Status[keyof typeof UpdateGroupMembershipStatus1Status];
+export type UpdateGroupMembershipStatus1Status = (typeof UpdateGroupMembershipStatus1Status)[keyof typeof UpdateGroupMembershipStatus1Status];
 export declare const UpdateGroupMembershipStatus1Status: {
     readonly ACCEPTED: "ACCEPTED";
     readonly REJECTED: "REJECTED";

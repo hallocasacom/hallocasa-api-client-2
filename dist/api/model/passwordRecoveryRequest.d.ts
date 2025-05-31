@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { PasswordRecoveryToken } from './passwordRecoveryToken';
+import type { PasswordRecoveryToken } from "./passwordRecoveryToken";
 /**
  * Request object for password recovery operations
  */

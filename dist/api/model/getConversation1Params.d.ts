@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { LocalDateTimeQueryString } from './localDateTimeQueryString';
+import type { LocalDateTimeQueryString } from "./localDateTimeQueryString";
 export type GetConversation1Params = {
     /**
      * User A Id

@@ -5,9 +5,9 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { FavoriteResourceValueType } from './favoriteResourceValueType';
+/**
+ * Resource data in JSON format
+ */
 export type FavoriteResource = {
-    valueType?: FavoriteResourceValueType;
-    empty?: boolean;
-    [key: string]: JsonValue;
+    [key: string]: unknown;
 };

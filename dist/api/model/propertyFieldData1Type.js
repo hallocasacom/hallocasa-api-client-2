@@ -10,13 +10,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.PropertyFieldData1Type = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.PropertyFieldData1Type = {
-    SAME: 'SAME',
-    INT: 'INT',
-    DOUBLE: 'DOUBLE',
-    BOOLEAN: 'BOOLEAN',
-    TEXT: 'TEXT',
-    DATE: 'DATE',
-    DATETIME: 'DATETIME',
-    FILE: 'FILE',
-    BIGINT: 'BIGINT',
+    SAME: "SAME",
+    INT: "INT",
+    DOUBLE: "DOUBLE",
+    BOOLEAN: "BOOLEAN",
+    TEXT: "TEXT",
+    DATE: "DATE",
+    DATETIME: "DATETIME",
+    FILE: "FILE",
+    BIGINT: "BIGINT",
 };

@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { FeatureDto } from './featureDto';
-import type { SubscriptionPlanFeatureDtoMetadata } from './subscriptionPlanFeatureDtoMetadata';
+import type { FeatureDto } from "./featureDto";
+import type { SubscriptionPlanFeatureDtoMetadata } from "./subscriptionPlanFeatureDtoMetadata";
 export interface SubscriptionPlanFeatureDto {
     feature?: FeatureDto;
     metadata?: SubscriptionPlanFeatureDtoMetadata;

@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { Country } from './country';
+import type { Country } from "./country";
 export interface Address {
     formatted?: string;
     line1?: string;

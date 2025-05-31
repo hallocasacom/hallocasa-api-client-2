@@ -5,9 +5,9 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { StripeEventDataObjectValueType } from './stripeEventDataObjectValueType';
+/**
+ * Stripe event object data in JSON format
+ */
 export type StripeEventDataObject = {
-    valueType?: StripeEventDataObjectValueType;
-    empty?: boolean;
-    [key: string]: JsonValue;
+    [key: string]: unknown;
 };

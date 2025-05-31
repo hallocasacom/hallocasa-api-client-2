@@ -5,10 +5,10 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { UserFilterResultSpec } from './userFilterResultSpec';
-import type { Country } from './country';
-import type { UserType } from './userType';
-import type { Language } from './language';
+import type { UserFilterResultSpec } from "./userFilterResultSpec";
+import type { Country } from "./country";
+import type { UserType } from "./userType";
+import type { Language } from "./language";
 /**
  * Filter request for searching users with various criteria including location, user types, languages, and business focus areas
  */

@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { SkilledUser } from './skilledUser';
-import type { Skill } from './skill';
+import type { SkilledUser } from "./skilledUser";
+import type { Skill } from "./skill";
 export interface SkillEndorsement {
     id?: number;
     user: SkilledUser;

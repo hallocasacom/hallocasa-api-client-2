@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { PropertyTypeGroup } from './propertyTypeGroup';
+import type { PropertyTypeGroup } from "./propertyTypeGroup";
 /**
  * Property type information
  */

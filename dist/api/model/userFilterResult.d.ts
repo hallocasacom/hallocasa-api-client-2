@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { SkilledUser } from './skilledUser';
+import type { SkilledUser } from "./skilledUser";
 export interface UserFilterResult {
     count?: number;
     userList?: SkilledUser[];

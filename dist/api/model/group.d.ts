@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { User } from './user';
-import type { GroupGroupStatus } from './groupGroupStatus';
+import type { User } from "./user";
+import type { GroupGroupStatus } from "./groupGroupStatus";
 export interface Group {
     id?: string;
     owner?: User;

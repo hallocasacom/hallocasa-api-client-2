@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { DropdownOptionGroupTranslationManagement } from './dropdownOptionGroupTranslationManagement';
-import type { DropdownOption } from './dropdownOption';
+import type { DropdownOptionGroupTranslationManagement } from "./dropdownOptionGroupTranslationManagement";
+import type { DropdownOption } from "./dropdownOption";
 export interface DropdownOptionGroup {
     id?: number;
     name?: string;

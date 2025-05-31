@@ -10,8 +10,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.HcFilterTypeEntryRangeFieldPresentation = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.HcFilterTypeEntryRangeFieldPresentation = {
-    INTEGER: 'INTEGER',
-    DOUBLE: 'DOUBLE',
-    CURRENCY: 'CURRENCY',
-    DATE: 'DATE',
+    INTEGER: "INTEGER",
+    DOUBLE: "DOUBLE",
+    CURRENCY: "CURRENCY",
+    DATE: "DATE",
 };

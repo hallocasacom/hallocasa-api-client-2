@@ -10,7 +10,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ChangePublicationStatus2Body = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.ChangePublicationStatus2Body = {
-    DRAFT: 'DRAFT',
-    PASSWORD_PROTECTED: 'PASSWORD_PROTECTED',
-    PUBLISHED: 'PUBLISHED',
+    DRAFT: "DRAFT",
+    PASSWORD_PROTECTED: "PASSWORD_PROTECTED",
+    PUBLISHED: "PUBLISHED",
 };

@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { Currency } from './currency';
+import type { Currency } from "./currency";
 /**
  * Country information
  */

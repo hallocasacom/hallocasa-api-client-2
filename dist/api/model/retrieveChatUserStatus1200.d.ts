@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type RetrieveChatUserStatus1200 = typeof RetrieveChatUserStatus1200[keyof typeof RetrieveChatUserStatus1200];
+export type RetrieveChatUserStatus1200 = (typeof RetrieveChatUserStatus1200)[keyof typeof RetrieveChatUserStatus1200];
 export declare const RetrieveChatUserStatus1200: {
     readonly OFFLINE: "OFFLINE";
     readonly ONLINE: "ONLINE";

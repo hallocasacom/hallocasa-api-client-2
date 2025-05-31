@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { PropertyFilterSubmission } from './propertyFilterSubmission';
-import type { ResultRequest } from './resultRequest';
+import type { PropertyFilterSubmission } from "./propertyFilterSubmission";
+import type { ResultRequest } from "./resultRequest";
 export interface PropertyFilterCriteria {
     filterList?: PropertyFilterSubmission[];
     resultRequest?: ResultRequest;

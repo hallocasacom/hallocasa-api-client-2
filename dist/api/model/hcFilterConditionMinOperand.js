@@ -10,9 +10,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.HcFilterConditionMinOperand = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.HcFilterConditionMinOperand = {
-    GT: 'GT',
-    GET: 'GET',
-    EQ: 'EQ',
-    LT: 'LT',
-    LET: 'LET',
+    GT: "GT",
+    GET: "GET",
+    EQ: "EQ",
+    LT: "LT",
+    LET: "LET",
 };

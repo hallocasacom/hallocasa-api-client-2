@@ -7,7 +7,7 @@
  */
 export type RequestToken1Body = {
     /** Client application identifier */
-    'client-id': string;
+    "client-id": string;
     /** Authorization code received from /auth endpoint */
     code: string;
     /** User email address */

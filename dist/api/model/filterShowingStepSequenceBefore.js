@@ -10,8 +10,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.FilterShowingStepSequenceBefore = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.FilterShowingStepSequenceBefore = {
-    INIT_GROUP: 'INIT_GROUP',
-    END_GROUP: 'END_GROUP',
-    AND: 'AND',
-    OR: 'OR',
+    INIT_GROUP: "INIT_GROUP",
+    END_GROUP: "END_GROUP",
+    AND: "AND",
+    OR: "OR",
 };

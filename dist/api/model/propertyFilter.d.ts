@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { HcFilter } from './hcFilter';
-import type { PropertyField } from './propertyField';
+import type { HcFilter } from "./hcFilter";
+import type { PropertyField } from "./propertyField";
 export interface PropertyFilter {
     filter?: HcFilter;
     propertyField?: PropertyField;

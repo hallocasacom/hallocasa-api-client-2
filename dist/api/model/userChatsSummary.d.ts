@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { User } from './user';
-import type { ConversationSummary } from './conversationSummary';
+import type { User } from "./user";
+import type { ConversationSummary } from "./conversationSummary";
 export interface UserChatsSummary {
     user?: User;
     conversationSummaries?: ConversationSummary[];

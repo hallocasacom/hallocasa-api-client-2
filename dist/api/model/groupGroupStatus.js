@@ -10,9 +10,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.GroupGroupStatus = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.GroupGroupStatus = {
-    PENDING: 'PENDING',
-    ACTIVE: 'ACTIVE',
-    INACTIVE: 'INACTIVE',
-    ARCHIVED: 'ARCHIVED',
-    DELETED: 'DELETED',
+    PENDING: "PENDING",
+    ACTIVE: "ACTIVE",
+    INACTIVE: "INACTIVE",
+    ARCHIVED: "ARCHIVED",
+    DELETED: "DELETED",
 };

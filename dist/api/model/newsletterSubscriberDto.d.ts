@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { Alert } from './alert';
-import type { SkilledUser } from './skilledUser';
+import type { Alert } from "./alert";
+import type { SkilledUser } from "./skilledUser";
 /**
  * Newsletter subscriber information
  */

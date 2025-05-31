@@ -10,9 +10,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.HcFilterTypeEntryFilterTypeNature = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.HcFilterTypeEntryFilterTypeNature = {
-    DROPDOWN: 'DROPDOWN',
-    YESNO: 'YESNO',
-    RANGE: 'RANGE',
-    TEXT: 'TEXT',
-    AREA_RANGE: 'AREA_RANGE',
+    DROPDOWN: "DROPDOWN",
+    YESNO: "YESNO",
+    RANGE: "RANGE",
+    TEXT: "TEXT",
+    AREA_RANGE: "AREA_RANGE",
 };

@@ -10,5 +10,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AlertUserAlertType = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.AlertUserAlertType = {
-    PROPERTY: 'PROPERTY',
+    PROPERTY: "PROPERTY",
 };

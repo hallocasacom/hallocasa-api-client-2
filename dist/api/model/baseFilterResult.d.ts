@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { BaseFilterResultListItem } from './baseFilterResultListItem';
+import type { BaseFilterResultListItem } from "./baseFilterResultListItem";
 export interface BaseFilterResult {
     count?: number;
     list?: BaseFilterResultListItem[];

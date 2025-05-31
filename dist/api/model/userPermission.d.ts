@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { UserPermissionMetadata } from './userPermissionMetadata';
+import type { UserPermissionMetadata } from "./userPermissionMetadata";
 export interface UserPermission {
     name?: string;
     metadata?: UserPermissionMetadata;

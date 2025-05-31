@@ -10,10 +10,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.GroupMemberGroupMemberStatus = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.GroupMemberGroupMemberStatus = {
-    INVITED: 'INVITED',
-    REQUESTED: 'REQUESTED',
-    ACCEPTED: 'ACCEPTED',
-    REJECTED: 'REJECTED',
-    REMOVED: 'REMOVED',
-    LEFT: 'LEFT',
+    INVITED: "INVITED",
+    REQUESTED: "REQUESTED",
+    ACCEPTED: "ACCEPTED",
+    REJECTED: "REJECTED",
+    REMOVED: "REMOVED",
+    LEFT: "LEFT",
 };

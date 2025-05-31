@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { User } from './user';
-import type { ChatAllowanceChatAllowanceType } from './chatAllowanceChatAllowanceType';
+import type { User } from "./user";
+import type { ChatAllowanceChatAllowanceType } from "./chatAllowanceChatAllowanceType";
 export interface ChatAllowance {
     userFrom?: User;
     userTo?: User;

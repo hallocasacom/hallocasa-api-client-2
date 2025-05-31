@@ -5,9 +5,9 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { AlertResultValueType } from './alertResultValueType';
+/**
+ * Alert result data in JSON format
+ */
 export type AlertResult = {
-    valueType?: AlertResultValueType;
-    empty?: boolean;
-    [key: string]: JsonValue;
+    [key: string]: unknown;
 };

@@ -15,12 +15,12 @@ export interface FBPropertyDto {
     description?: string;
     home_listing_id?: string;
     home_listing_group_id?: string;
-    'address.addr1'?: string;
-    'address.city'?: string;
-    'address.region'?: string;
-    'address.country'?: string;
-    'address.postal_code'?: string;
-    'image[0].url'?: string;
+    "address.addr1"?: string;
+    "address.city"?: string;
+    "address.region"?: string;
+    "address.country"?: string;
+    "address.postal_code"?: string;
+    "image[0].url"?: string;
     num_beds?: string;
     num_baths?: string;
     num_rooms?: string;

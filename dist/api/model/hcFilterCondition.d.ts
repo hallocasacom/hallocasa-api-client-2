@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { HcFilterConditionMinOperand } from './hcFilterConditionMinOperand';
-import type { HcFilterConditionMaxOperand } from './hcFilterConditionMaxOperand';
+import type { HcFilterConditionMinOperand } from "./hcFilterConditionMinOperand";
+import type { HcFilterConditionMaxOperand } from "./hcFilterConditionMaxOperand";
 export interface HcFilterCondition {
     filterId?: number;
     searchSpecific?: boolean;

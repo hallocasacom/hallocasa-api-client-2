@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type ChatAllowanceChatAllowanceType = typeof ChatAllowanceChatAllowanceType[keyof typeof ChatAllowanceChatAllowanceType];
+export type ChatAllowanceChatAllowanceType = (typeof ChatAllowanceChatAllowanceType)[keyof typeof ChatAllowanceChatAllowanceType];
 export declare const ChatAllowanceChatAllowanceType: {
     readonly REJECTED: "REJECTED";
     readonly ACCEPTED: "ACCEPTED";

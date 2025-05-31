@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type HcFilterEntryFilterWorkerOption = typeof HcFilterEntryFilterWorkerOption[keyof typeof HcFilterEntryFilterWorkerOption];
+export type HcFilterEntryFilterWorkerOption = (typeof HcFilterEntryFilterWorkerOption)[keyof typeof HcFilterEntryFilterWorkerOption];
 export declare const HcFilterEntryFilterWorkerOption: {
     readonly PROPERTY_LOCATION_KEY: "PROPERTY_LOCATION_KEY";
     readonly COUNTRY_KEY: "COUNTRY_KEY";

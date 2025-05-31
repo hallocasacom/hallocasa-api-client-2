@@ -5,12 +5,13 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { NotificationType } from './notificationType';
-import type { NotificationBody } from './notificationBody';
+import type { NotificationType } from "./notificationType";
+import type { NotificationBody } from "./notificationBody";
 export interface Notification {
     id?: number;
     email: string;
     type: NotificationType;
     currentDateTime?: string;
+    /** Notification body data in JSON format */
     body?: NotificationBody;
 }

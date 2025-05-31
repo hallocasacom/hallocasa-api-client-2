@@ -5,14 +5,14 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { JsonObject } from './jsonObject';
-import type { UserPermission } from './userPermission';
+import type { UserDtoSubscriptionsItem } from "./userDtoSubscriptionsItem";
+import type { UserPermission } from "./userPermission";
 export interface UserDto {
     id?: number;
     email?: string;
     firstName?: string;
     lastName?: string;
     confirmedFlag?: boolean;
-    subscriptions?: JsonObject[];
+    subscriptions?: UserDtoSubscriptionsItem[];
     userPermissions?: UserPermission[];
 }

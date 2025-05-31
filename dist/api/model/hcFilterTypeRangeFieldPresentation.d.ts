@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type HcFilterTypeRangeFieldPresentation = typeof HcFilterTypeRangeFieldPresentation[keyof typeof HcFilterTypeRangeFieldPresentation];
+export type HcFilterTypeRangeFieldPresentation = (typeof HcFilterTypeRangeFieldPresentation)[keyof typeof HcFilterTypeRangeFieldPresentation];
 export declare const HcFilterTypeRangeFieldPresentation: {
     readonly INTEGER: "INTEGER";
     readonly DOUBLE: "DOUBLE";

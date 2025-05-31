@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { Property } from './property';
-import type { User } from './user';
+import type { Property } from "./property";
+import type { User } from "./user";
 export interface Testimonial {
     id?: number;
     property?: Property;

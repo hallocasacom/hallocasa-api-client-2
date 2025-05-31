@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { GeoLocation } from './geoLocation';
-import type { Address } from './address';
+import type { GeoLocation } from "./geoLocation";
+import type { Address } from "./address";
 export interface GeoPlace {
     geoLocation?: GeoLocation;
     address?: Address;

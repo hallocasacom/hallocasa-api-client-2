@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type GroupGroupStatus = typeof GroupGroupStatus[keyof typeof GroupGroupStatus];
+export type GroupGroupStatus = (typeof GroupGroupStatus)[keyof typeof GroupGroupStatus];
 export declare const GroupGroupStatus: {
     readonly PENDING: "PENDING";
     readonly ACTIVE: "ACTIVE";

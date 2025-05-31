@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { SubscriptionPlanFeatureDto } from './subscriptionPlanFeatureDto';
-import type { SubscriptionPriceDto } from './subscriptionPriceDto';
+import type { SubscriptionPlanFeatureDto } from "./subscriptionPlanFeatureDto";
+import type { SubscriptionPriceDto } from "./subscriptionPriceDto";
 export interface SubscriptionPlanDto {
     id: number;
     name?: string;

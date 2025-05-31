@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type DropdownOptionGroupTranslationManagement = typeof DropdownOptionGroupTranslationManagement[keyof typeof DropdownOptionGroupTranslationManagement];
+export type DropdownOptionGroupTranslationManagement = (typeof DropdownOptionGroupTranslationManagement)[keyof typeof DropdownOptionGroupTranslationManagement];
 export declare const DropdownOptionGroupTranslationManagement: {
     readonly TOTAL: "TOTAL";
     readonly PARTIAL: "PARTIAL";

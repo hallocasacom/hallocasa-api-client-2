@@ -5,8 +5,8 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { HcFilterTypeEntryFilterTypeNature } from './hcFilterTypeEntryFilterTypeNature';
-import type { HcFilterTypeEntryRangeFieldPresentation } from './hcFilterTypeEntryRangeFieldPresentation';
+import type { HcFilterTypeEntryFilterTypeNature } from "./hcFilterTypeEntryFilterTypeNature";
+import type { HcFilterTypeEntryRangeFieldPresentation } from "./hcFilterTypeEntryRangeFieldPresentation";
 export interface HcFilterTypeEntry {
     id?: number;
     name?: string;

@@ -5,9 +5,9 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { SubscriptionPlanDto } from './subscriptionPlanDto';
-import type { UserSubscriptionDtoRenewalType } from './userSubscriptionDtoRenewalType';
-import type { UserSubscriptionDtoStatus } from './userSubscriptionDtoStatus';
+import type { SubscriptionPlanDto } from "./subscriptionPlanDto";
+import type { UserSubscriptionDtoRenewalType } from "./userSubscriptionDtoRenewalType";
+import type { UserSubscriptionDtoStatus } from "./userSubscriptionDtoStatus";
 export interface UserSubscriptionDto {
     subscriptionPlan?: SubscriptionPlanDto;
     startDate?: string;

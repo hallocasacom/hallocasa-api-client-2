@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type FavoriteResourceType = typeof FavoriteResourceType[keyof typeof FavoriteResourceType];
+export type FavoriteResourceType = (typeof FavoriteResourceType)[keyof typeof FavoriteResourceType];
 export declare const FavoriteResourceType: {
     readonly PROPERTY: "PROPERTY";
 };

@@ -10,8 +10,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CheckoutSessionDtoStatus = void 0;
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 exports.CheckoutSessionDtoStatus = {
-    IN_PROCESS: 'IN_PROCESS',
-    SUCCESS: 'SUCCESS',
-    CANCELED: 'CANCELED',
-    FAILED: 'FAILED',
+    IN_PROCESS: "IN_PROCESS",
+    SUCCESS: "SUCCESS",
+    CANCELED: "CANCELED",
+    FAILED: "FAILED",
 };

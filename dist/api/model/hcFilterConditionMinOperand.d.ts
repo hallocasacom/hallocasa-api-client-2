@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type HcFilterConditionMinOperand = typeof HcFilterConditionMinOperand[keyof typeof HcFilterConditionMinOperand];
+export type HcFilterConditionMinOperand = (typeof HcFilterConditionMinOperand)[keyof typeof HcFilterConditionMinOperand];
 export declare const HcFilterConditionMinOperand: {
     readonly GT: "GT";
     readonly GET: "GET";

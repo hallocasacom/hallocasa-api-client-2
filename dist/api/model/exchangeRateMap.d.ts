@@ -5,8 +5,10 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
+/**
+ * Exchange rate map where each currency code maps to its exchange rates with other currencies
+ */
 export interface ExchangeRateMap {
-    empty?: boolean;
     [key: string]: {
         [key: string]: number;
     };

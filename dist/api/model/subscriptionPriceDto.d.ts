@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { SubscriptionPriceDtoRenewalType } from './subscriptionPriceDtoRenewalType';
+import type { SubscriptionPriceDtoRenewalType } from "./subscriptionPriceDtoRenewalType";
 export interface SubscriptionPriceDto {
     id: string;
     price?: number;

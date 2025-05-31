@@ -5,10 +5,10 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { PropertyType } from './propertyType';
-import type { PropertyLocation } from './propertyLocation';
-import type { PropertyProposal } from './propertyProposal';
-import type { Country } from './country';
+import type { PropertyType } from "./propertyType";
+import type { PropertyLocation } from "./propertyLocation";
+import type { PropertyProposal } from "./propertyProposal";
+import type { Country } from "./country";
 export interface PropertyKey {
     propertyType: PropertyType;
     propertyLocation: PropertyLocation;

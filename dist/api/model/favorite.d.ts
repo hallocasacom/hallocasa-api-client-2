@@ -5,11 +5,12 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { FavoriteResourceType } from './favoriteResourceType';
-import type { FavoriteResource } from './favoriteResource';
+import type { FavoriteResourceType } from "./favoriteResourceType";
+import type { FavoriteResource } from "./favoriteResource";
 export interface Favorite {
     id?: number;
     resourceType: FavoriteResourceType;
     resourceId: string;
+    /** Resource data in JSON format */
     resource?: FavoriteResource;
 }

@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-export type NotificationType = typeof NotificationType[keyof typeof NotificationType];
+export type NotificationType = (typeof NotificationType)[keyof typeof NotificationType];
 export declare const NotificationType: {
     readonly TO_BROKER__ALERT_CREATED: "TO_BROKER__ALERT_CREATED";
     readonly TO_USER__WEEKLY_PROPERTIES: "TO_USER__WEEKLY_PROPERTIES";

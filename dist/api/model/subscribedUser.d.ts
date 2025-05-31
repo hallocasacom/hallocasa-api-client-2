@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { Address } from './address';
+import type { Address } from "./address";
 export interface SubscribedUser {
     id?: number;
     email?: string;

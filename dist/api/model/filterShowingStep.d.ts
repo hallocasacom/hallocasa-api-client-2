@@ -5,9 +5,9 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { FilterShowingStepSequenceBefore } from './filterShowingStepSequenceBefore';
-import type { HcFilterCondition } from './hcFilterCondition';
-import type { FilterShowingStepSequenceAfter } from './filterShowingStepSequenceAfter';
+import type { FilterShowingStepSequenceBefore } from "./filterShowingStepSequenceBefore";
+import type { HcFilterCondition } from "./hcFilterCondition";
+import type { FilterShowingStepSequenceAfter } from "./filterShowingStepSequenceAfter";
 export interface FilterShowingStep {
     sequenceBefore?: FilterShowingStepSequenceBefore;
     filterCondition?: HcFilterCondition;

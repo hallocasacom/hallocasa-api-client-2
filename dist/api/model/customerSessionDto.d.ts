@@ -5,7 +5,7 @@
  * Hallocasa API Documentation
  * OpenAPI spec version: v1
  */
-import type { SubscribedUserDto } from './subscribedUserDto';
+import type { SubscribedUserDto } from "./subscribedUserDto";
 export interface CustomerSessionDto {
     id?: string;
     user?: SubscribedUserDto;
