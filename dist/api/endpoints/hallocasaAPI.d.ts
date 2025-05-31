@@ -1,29 +1,9 @@
-import type { DataTag, DefinedInitialDataOptions, DefinedUseQueryResult, QueryClient, QueryKey, UndefinedInitialDataOptions, UseMutationOptions, UseMutationResult, UseQueryOptions, UseQueryResult } from "@tanstack/react-query";
+import type { DataTag, DefinedInitialDataOptions, DefinedUseQueryResult, QueryClient, QueryKey, UndefinedInitialDataOptions, UseQueryOptions, UseQueryResult } from "@tanstack/react-query";
 import type { Alert, Attachment, AuthInfoDto, AutopilotUser, BaseFilterResult, Brokerage, ChangePublicationStatus2Body, ChatAllowance, ChatTicket, CheckoutSessionDto, Contract, Country, CountryPhonePrefix, Currency, CustomerSessionDto, ExchangeRateMap, FBPropertyDto, Favorite, FetchPublishedTestimonials1Params, FetchReceivedTestimonials1Params, Find1Params, FindArchivedGroupsByUser1Params, FindGroupsByUser1Params, FindInactiveGroupsByUser1Params, FindInvitedGroupsByUser1Params, FindPropertiesByUser1Params, FindProperty1Params, FindRequestedGroupsByUser1Params, FindTestimonialsByUser1Params, GeoPlace, GetAlertResult1200, GetAll1Params, GetByUserParams, GetByUserWithResult1Params, GetChatSummaryByUser1Params, GetConversation1Params, GetGeoLocationsByLatLng1Params, GetGroupMembers1Params, GetLanguages1200, GetLanguages1Params, GetPropertyFieldOptions1200, GetPropertyFiltersParams, GetRecentProperties1Params, Group, GroupInviteParams, GroupMember, Language, LocaleSet, LogEntry, Message, NewsletterSubscriberDto, Notification, NotifyUploadRequest, PasswordRecoveryRequest, PhoneCodeCheckResource, PhoneCodeRequestResource, PreviewProperty2Params, PreviewPropertyParams, Property, PropertyFilter, PropertyFilterCriteria, PropertyFilterResult, PropertyFilterSubmission, PropertyKey, PropertyLocation, PropertyProposal, PropertyType, Register1Params, RequestActivationLink1Body, RequestToken1Body, RetrieveChatUserStatus1200, RetrieveEndorsementsByUser1Params, Skill, SkillEndorsement, SkilledUser, StripeEvent, SubscribedUser, SubscriptionPlanFeatureDto, Testimonial, TestimonialFilterResult, TestimonialRequest, TextTranslation, TranslateText1Params, UpdateGroupMembershipStatus1Params, UploadKyeroPropertiesParams, User, UserChatsSummary, UserFilterRequest, UserFilterResult, UserListRequest, UserSkill, UserSubscriptionDto, UserType, WeeklyAlertRange, XmlUrl } from "../model";
 /**
  * @summary Post a attachment request
  */
 export declare const createAttachment1: (attachment: Attachment, signal?: AbortSignal) => Promise<Attachment>;
-export declare const getCreateAttachment1MutationOptions: <TError = Attachment, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof createAttachment1>>, TError, {
-        data: Attachment;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof createAttachment1>>, TError, {
-    data: Attachment;
-}, TContext>;
-export type CreateAttachment1MutationResult = NonNullable<Awaited<ReturnType<typeof createAttachment1>>>;
-export type CreateAttachment1MutationBody = Attachment;
-export type CreateAttachment1MutationError = Attachment;
-/**
- * @summary Post a attachment request
- */
-export declare const useCreateAttachment1: <TError = Attachment, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof createAttachment1>>, TError, {
-        data: Attachment;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof createAttachment1>>, TError, {
-    data: Attachment;
-}, TContext>;
 /**
  * @summary Get details to download a file
  */
@@ -55,30 +35,6 @@ export declare function useRetrieveAttachment1<TData = Awaited<ReturnType<typeof
  * @summary Notify a new file has been loaded in S3
  */
 export declare const updateAttachment1: (fileId: string, notifyUploadRequest: NotifyUploadRequest, signal?: AbortSignal) => Promise<unknown>;
-export declare const getUpdateAttachment1MutationOptions: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof updateAttachment1>>, TError, {
-        fileId: string;
-        data: NotifyUploadRequest;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof updateAttachment1>>, TError, {
-    fileId: string;
-    data: NotifyUploadRequest;
-}, TContext>;
-export type UpdateAttachment1MutationResult = NonNullable<Awaited<ReturnType<typeof updateAttachment1>>>;
-export type UpdateAttachment1MutationBody = NotifyUploadRequest;
-export type UpdateAttachment1MutationError = unknown;
-/**
- * @summary Notify a new file has been loaded in S3
- */
-export declare const useUpdateAttachment1: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof updateAttachment1>>, TError, {
-        fileId: string;
-        data: NotifyUploadRequest;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof updateAttachment1>>, TError, {
-    fileId: string;
-    data: NotifyUploadRequest;
-}, TContext>;
 /**
  * Retrieves the chat allowance settings between two users. User must be one of the involved parties.
  * @summary Get chat allowance for a user pair
@@ -112,30 +68,6 @@ export declare function useGetChatAllowance1<TData = Awaited<ReturnType<typeof g
  * @summary Update chat allowance for a user pair
  */
 export declare const updateChatAllowance1: (userPair: string, chatAllowance: ChatAllowance) => Promise<ChatAllowance>;
-export declare const getUpdateChatAllowance1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof updateChatAllowance1>>, TError, {
-        userPair: string;
-        data: ChatAllowance;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof updateChatAllowance1>>, TError, {
-    userPair: string;
-    data: ChatAllowance;
-}, TContext>;
-export type UpdateChatAllowance1MutationResult = NonNullable<Awaited<ReturnType<typeof updateChatAllowance1>>>;
-export type UpdateChatAllowance1MutationBody = ChatAllowance;
-export type UpdateChatAllowance1MutationError = void;
-/**
- * @summary Update chat allowance for a user pair
- */
-export declare const useUpdateChatAllowance1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof updateChatAllowance1>>, TError, {
-        userPair: string;
-        data: ChatAllowance;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof updateChatAllowance1>>, TError, {
-    userPair: string;
-    data: ChatAllowance;
-}, TContext>;
 /**
  * Retrieves summaries of all chat conversations for a user
  * @summary Get the user chat summaries
@@ -250,26 +182,6 @@ export declare function useFindUserContracts1<TData = Awaited<ReturnType<typeof 
  * @summary Save a user Contract
  */
 export declare const save2: (contract: Contract, signal?: AbortSignal) => Promise<Contract>;
-export declare const getSave2MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof save2>>, TError, {
-        data: Contract;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof save2>>, TError, {
-    data: Contract;
-}, TContext>;
-export type Save2MutationResult = NonNullable<Awaited<ReturnType<typeof save2>>>;
-export type Save2MutationBody = Contract;
-export type Save2MutationError = void;
-/**
- * @summary Save a user Contract
- */
-export declare const useSave2: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof save2>>, TError, {
-        data: Contract;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof save2>>, TError, {
-    data: Contract;
-}, TContext>;
 /**
  * @summary Get a message by conversation
  */
@@ -301,59 +213,11 @@ export declare function useGetConversation1<TData = Awaited<ReturnType<typeof ge
  * @summary Post a message
  */
 export declare const sendMessage1: (message: Message, signal?: AbortSignal) => Promise<Message>;
-export declare const getSendMessage1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof sendMessage1>>, TError, {
-        data: Message;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof sendMessage1>>, TError, {
-    data: Message;
-}, TContext>;
-export type SendMessage1MutationResult = NonNullable<Awaited<ReturnType<typeof sendMessage1>>>;
-export type SendMessage1MutationBody = Message;
-export type SendMessage1MutationError = void;
-/**
- * @summary Post a message
- */
-export declare const useSendMessage1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof sendMessage1>>, TError, {
-        data: Message;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof sendMessage1>>, TError, {
-    data: Message;
-}, TContext>;
 /**
  * Retrieves notifications for a specific user and notification type. Designed for autopilot integration.
  * @summary Get user notifications by type
  */
 export declare const getByUserWithResult1: (type: "TO_BROKER__ALERT_CREATED" | "TO_USER__WEEKLY_PROPERTIES" | "TO_USER__WEEKLY_PAYED_SUBSCRIBERS" | "TO_USER__CUSTOMIZED_ALERT" | "TO_USER__WEEKLY_GROUP_PROPERTIES" | "TO_USER__NEWSLETTER_NEW_SUBSCRIBER" | "TO_USER__NEWSLETTER_CONFIRMATION" | "TO_USER__NEWSLETTER_LISTING", autopilotUser: AutopilotUser, params: GetByUserWithResult1Params, signal?: AbortSignal) => Promise<Notification>;
-export declare const getGetByUserWithResult1MutationOptions: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof getByUserWithResult1>>, TError, {
-        type: "TO_BROKER__ALERT_CREATED" | "TO_USER__WEEKLY_PROPERTIES" | "TO_USER__WEEKLY_PAYED_SUBSCRIBERS" | "TO_USER__CUSTOMIZED_ALERT" | "TO_USER__WEEKLY_GROUP_PROPERTIES" | "TO_USER__NEWSLETTER_NEW_SUBSCRIBER" | "TO_USER__NEWSLETTER_CONFIRMATION" | "TO_USER__NEWSLETTER_LISTING";
-        data: AutopilotUser;
-        params: GetByUserWithResult1Params;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof getByUserWithResult1>>, TError, {
-    type: "TO_BROKER__ALERT_CREATED" | "TO_USER__WEEKLY_PROPERTIES" | "TO_USER__WEEKLY_PAYED_SUBSCRIBERS" | "TO_USER__CUSTOMIZED_ALERT" | "TO_USER__WEEKLY_GROUP_PROPERTIES" | "TO_USER__NEWSLETTER_NEW_SUBSCRIBER" | "TO_USER__NEWSLETTER_CONFIRMATION" | "TO_USER__NEWSLETTER_LISTING";
-    data: AutopilotUser;
-    params: GetByUserWithResult1Params;
-}, TContext>;
-export type GetByUserWithResult1MutationResult = NonNullable<Awaited<ReturnType<typeof getByUserWithResult1>>>;
-export type GetByUserWithResult1MutationBody = AutopilotUser;
-export type GetByUserWithResult1MutationError = string;
-/**
- * @summary Get user notifications by type
- */
-export declare const useGetByUserWithResult1: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof getByUserWithResult1>>, TError, {
-        type: "TO_BROKER__ALERT_CREATED" | "TO_USER__WEEKLY_PROPERTIES" | "TO_USER__WEEKLY_PAYED_SUBSCRIBERS" | "TO_USER__CUSTOMIZED_ALERT" | "TO_USER__WEEKLY_GROUP_PROPERTIES" | "TO_USER__NEWSLETTER_NEW_SUBSCRIBER" | "TO_USER__NEWSLETTER_CONFIRMATION" | "TO_USER__NEWSLETTER_LISTING";
-        data: AutopilotUser;
-        params: GetByUserWithResult1Params;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof getByUserWithResult1>>, TError, {
-    type: "TO_BROKER__ALERT_CREATED" | "TO_USER__WEEKLY_PROPERTIES" | "TO_USER__WEEKLY_PAYED_SUBSCRIBERS" | "TO_USER__CUSTOMIZED_ALERT" | "TO_USER__WEEKLY_GROUP_PROPERTIES" | "TO_USER__NEWSLETTER_NEW_SUBSCRIBER" | "TO_USER__NEWSLETTER_CONFIRMATION" | "TO_USER__NEWSLETTER_LISTING";
-    data: AutopilotUser;
-    params: GetByUserWithResult1Params;
-}, TContext>;
 /**
  * @summary Retrieve a user chat
  */
@@ -606,25 +470,6 @@ export declare function useGetAllLanguages1<TData = Awaited<ReturnType<typeof ge
  * @summary Delete a locale entry with all translations related
  */
 export declare const delete1: (pnemonic: string) => Promise<string>;
-export declare const getDelete1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof delete1>>, TError, {
-        pnemonic: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof delete1>>, TError, {
-    pnemonic: string;
-}, TContext>;
-export type Delete1MutationResult = NonNullable<Awaited<ReturnType<typeof delete1>>>;
-export type Delete1MutationError = void;
-/**
- * @summary Delete a locale entry with all translations related
- */
-export declare const useDelete1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof delete1>>, TError, {
-        pnemonic: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof delete1>>, TError, {
-    pnemonic: string;
-}, TContext>;
 /**
  * Retrieves the complete list of available locales in the system
  * @summary Returns all language list locale entries
@@ -714,17 +559,6 @@ export declare function useTranslateText1<TData = Awaited<ReturnType<typeof tran
  * @summary Manually trigger Kyero exports to S3
  */
 export declare const triggerKyeroExport1: (signal?: AbortSignal) => Promise<string>;
-export declare const getTriggerKyeroExport1MutationOptions: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof triggerKyeroExport1>>, TError, void, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof triggerKyeroExport1>>, TError, void, TContext>;
-export type TriggerKyeroExport1MutationResult = NonNullable<Awaited<ReturnType<typeof triggerKyeroExport1>>>;
-export type TriggerKyeroExport1MutationError = string;
-/**
- * @summary Manually trigger Kyero exports to S3
- */
-export declare const useTriggerKyeroExport1: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof triggerKyeroExport1>>, TError, void, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof triggerKyeroExport1>>, TError, void, TContext>;
 /**
  * Generates and returns property data in XML format for a specific user and format type.
  * @summary Get property XML for specific user
@@ -815,109 +649,21 @@ export declare function useGetFormats1<TData = Awaited<ReturnType<typeof getForm
  * @summary Upload Kyero properties with XML in request body
  */
 export declare const uploadKyeroProperties2: (uploadKyeroProperties2Body: string, signal?: AbortSignal) => Promise<unknown>;
-export declare const getUploadKyeroProperties2MutationOptions: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof uploadKyeroProperties2>>, TError, {
-        data: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof uploadKyeroProperties2>>, TError, {
-    data: string;
-}, TContext>;
-export type UploadKyeroProperties2MutationResult = NonNullable<Awaited<ReturnType<typeof uploadKyeroProperties2>>>;
-export type UploadKyeroProperties2MutationBody = string;
-export type UploadKyeroProperties2MutationError = unknown;
-/**
- * @summary Upload Kyero properties with XML in request body
- */
-export declare const useUploadKyeroProperties2: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof uploadKyeroProperties2>>, TError, {
-        data: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof uploadKyeroProperties2>>, TError, {
-    data: string;
-}, TContext>;
 /**
  * Upload properties in Kyero format by providing a URL to an XML file
  * @summary Upload Kyero properties from URL
  */
 export declare const uploadKyeroPropertiesFromUrl1: (xmlUrl: XmlUrl, signal?: AbortSignal) => Promise<unknown>;
-export declare const getUploadKyeroPropertiesFromUrl1MutationOptions: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof uploadKyeroPropertiesFromUrl1>>, TError, {
-        data: XmlUrl;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof uploadKyeroPropertiesFromUrl1>>, TError, {
-    data: XmlUrl;
-}, TContext>;
-export type UploadKyeroPropertiesFromUrl1MutationResult = NonNullable<Awaited<ReturnType<typeof uploadKyeroPropertiesFromUrl1>>>;
-export type UploadKyeroPropertiesFromUrl1MutationBody = XmlUrl;
-export type UploadKyeroPropertiesFromUrl1MutationError = unknown;
-/**
- * @summary Upload Kyero properties from URL
- */
-export declare const useUploadKyeroPropertiesFromUrl1: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof uploadKyeroPropertiesFromUrl1>>, TError, {
-        data: XmlUrl;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof uploadKyeroPropertiesFromUrl1>>, TError, {
-    data: XmlUrl;
-}, TContext>;
 /**
  * Upload properties with XML content in the request body using the specified format
  * @summary Upload properties in specified format with XML in request body
  */
 export declare const uploadProperties1: (format: "kyero" | "wasico" | "xml2u" | "hallocasa", uploadProperties1Body: string, signal?: AbortSignal) => Promise<unknown>;
-export declare const getUploadProperties1MutationOptions: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof uploadProperties1>>, TError, {
-        format: "kyero" | "wasico" | "xml2u" | "hallocasa";
-        data: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof uploadProperties1>>, TError, {
-    format: "kyero" | "wasico" | "xml2u" | "hallocasa";
-    data: string;
-}, TContext>;
-export type UploadProperties1MutationResult = NonNullable<Awaited<ReturnType<typeof uploadProperties1>>>;
-export type UploadProperties1MutationBody = string;
-export type UploadProperties1MutationError = unknown;
-/**
- * @summary Upload properties in specified format with XML in request body
- */
-export declare const useUploadProperties1: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof uploadProperties1>>, TError, {
-        format: "kyero" | "wasico" | "xml2u" | "hallocasa";
-        data: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof uploadProperties1>>, TError, {
-    format: "kyero" | "wasico" | "xml2u" | "hallocasa";
-    data: string;
-}, TContext>;
 /**
  * Upload properties in the specified format by providing a URL to an XML file
  * @summary Upload properties in specified format from URL
  */
 export declare const uploadPropertiesFromUrl1: (format: "kyero" | "wasico" | "xml2u" | "hallocasa", xmlUrl: XmlUrl, signal?: AbortSignal) => Promise<unknown>;
-export declare const getUploadPropertiesFromUrl1MutationOptions: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof uploadPropertiesFromUrl1>>, TError, {
-        format: "kyero" | "wasico" | "xml2u" | "hallocasa";
-        data: XmlUrl;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof uploadPropertiesFromUrl1>>, TError, {
-    format: "kyero" | "wasico" | "xml2u" | "hallocasa";
-    data: XmlUrl;
-}, TContext>;
-export type UploadPropertiesFromUrl1MutationResult = NonNullable<Awaited<ReturnType<typeof uploadPropertiesFromUrl1>>>;
-export type UploadPropertiesFromUrl1MutationBody = XmlUrl;
-export type UploadPropertiesFromUrl1MutationError = unknown;
-/**
- * @summary Upload properties in specified format from URL
- */
-export declare const useUploadPropertiesFromUrl1: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof uploadPropertiesFromUrl1>>, TError, {
-        format: "kyero" | "wasico" | "xml2u" | "hallocasa";
-        data: XmlUrl;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof uploadPropertiesFromUrl1>>, TError, {
-    format: "kyero" | "wasico" | "xml2u" | "hallocasa";
-    data: XmlUrl;
-}, TContext>;
 /**
  * Exports property data to Facebook Marketplace format within the specified date range
  * @summary Export properties to Facebook Marketplace
@@ -978,198 +724,38 @@ export declare function useGetGroupMembers1<TData = Awaited<ReturnType<typeof ge
  * @summary Accept Group Invitation
  */
 export declare const groupInvite2: (groupId: string, signal?: AbortSignal) => Promise<GroupMember>;
-export declare const getGroupInvite2MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof groupInvite2>>, TError, {
-        groupId: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof groupInvite2>>, TError, {
-    groupId: string;
-}, TContext>;
-export type GroupInvite2MutationResult = NonNullable<Awaited<ReturnType<typeof groupInvite2>>>;
-export type GroupInvite2MutationError = void;
-/**
- * @summary Accept Group Invitation
- */
-export declare const useGroupInvite2: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof groupInvite2>>, TError, {
-        groupId: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof groupInvite2>>, TError, {
-    groupId: string;
-}, TContext>;
 /**
  * @summary Request Invitation to Group
  */
 export declare const groupInvite: (groupId: string, params?: GroupInviteParams, signal?: AbortSignal) => Promise<GroupMember[]>;
-export declare const getGroupInviteMutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof groupInvite>>, TError, {
-        groupId: string;
-        params?: GroupInviteParams;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof groupInvite>>, TError, {
-    groupId: string;
-    params?: GroupInviteParams;
-}, TContext>;
-export type GroupInviteMutationResult = NonNullable<Awaited<ReturnType<typeof groupInvite>>>;
-export type GroupInviteMutationError = void;
-/**
- * @summary Request Invitation to Group
- */
-export declare const useGroupInvite: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof groupInvite>>, TError, {
-        groupId: string;
-        params?: GroupInviteParams;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof groupInvite>>, TError, {
-    groupId: string;
-    params?: GroupInviteParams;
-}, TContext>;
 /**
  * @summary Leave Group
  */
 export declare const groupLeave1: (groupId: string, signal?: AbortSignal) => Promise<GroupMember>;
-export declare const getGroupLeave1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof groupLeave1>>, TError, {
-        groupId: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof groupLeave1>>, TError, {
-    groupId: string;
-}, TContext>;
-export type GroupLeave1MutationResult = NonNullable<Awaited<ReturnType<typeof groupLeave1>>>;
-export type GroupLeave1MutationError = void;
-/**
- * @summary Leave Group
- */
-export declare const useGroupLeave1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof groupLeave1>>, TError, {
-        groupId: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof groupLeave1>>, TError, {
-    groupId: string;
-}, TContext>;
 /**
  * @summary Request Admission to Group
  */
 export declare const groupRequest1: (groupId: string, signal?: AbortSignal) => Promise<GroupMember>;
-export declare const getGroupRequest1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof groupRequest1>>, TError, {
-        groupId: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof groupRequest1>>, TError, {
-    groupId: string;
-}, TContext>;
-export type GroupRequest1MutationResult = NonNullable<Awaited<ReturnType<typeof groupRequest1>>>;
-export type GroupRequest1MutationError = void;
-/**
- * @summary Request Admission to Group
- */
-export declare const useGroupRequest1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof groupRequest1>>, TError, {
-        groupId: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof groupRequest1>>, TError, {
-    groupId: string;
-}, TContext>;
 /**
  * Acceptable Status values are:  ACCEPTED, REJECTED, REMOVED
  * @summary Update the group member status from groupId supplied
  */
 export declare const updateGroupMembershipStatus1: (groupId: string, params?: UpdateGroupMembershipStatus1Params, signal?: AbortSignal) => Promise<GroupMember[]>;
-export declare const getUpdateGroupMembershipStatus1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof updateGroupMembershipStatus1>>, TError, {
-        groupId: string;
-        params?: UpdateGroupMembershipStatus1Params;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof updateGroupMembershipStatus1>>, TError, {
-    groupId: string;
-    params?: UpdateGroupMembershipStatus1Params;
-}, TContext>;
-export type UpdateGroupMembershipStatus1MutationResult = NonNullable<Awaited<ReturnType<typeof updateGroupMembershipStatus1>>>;
-export type UpdateGroupMembershipStatus1MutationError = void;
-/**
- * @summary Update the group member status from groupId supplied
- */
-export declare const useUpdateGroupMembershipStatus1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof updateGroupMembershipStatus1>>, TError, {
-        groupId: string;
-        params?: UpdateGroupMembershipStatus1Params;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof updateGroupMembershipStatus1>>, TError, {
-    groupId: string;
-    params?: UpdateGroupMembershipStatus1Params;
-}, TContext>;
 /**
  * This process is reversible
  * @summary Archive the group with id supplied
  */
 export declare const archiveGroup1: (id: string, signal?: AbortSignal) => Promise<string>;
-export declare const getArchiveGroup1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof archiveGroup1>>, TError, {
-        id: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof archiveGroup1>>, TError, {
-    id: string;
-}, TContext>;
-export type ArchiveGroup1MutationResult = NonNullable<Awaited<ReturnType<typeof archiveGroup1>>>;
-export type ArchiveGroup1MutationError = void;
-/**
- * @summary Archive the group with id supplied
- */
-export declare const useArchiveGroup1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof archiveGroup1>>, TError, {
-        id: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof archiveGroup1>>, TError, {
-    id: string;
-}, TContext>;
 /**
  * This process is reversible
  * @summary Deactivate the group with id supplied
  */
 export declare const deactivateGroup1: (id: string, signal?: AbortSignal) => Promise<string>;
-export declare const getDeactivateGroup1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof deactivateGroup1>>, TError, {
-        id: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof deactivateGroup1>>, TError, {
-    id: string;
-}, TContext>;
-export type DeactivateGroup1MutationResult = NonNullable<Awaited<ReturnType<typeof deactivateGroup1>>>;
-export type DeactivateGroup1MutationError = void;
-/**
- * @summary Deactivate the group with id supplied
- */
-export declare const useDeactivateGroup1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof deactivateGroup1>>, TError, {
-        id: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof deactivateGroup1>>, TError, {
-    id: string;
-}, TContext>;
 /**
  * This process is not reversible
  * @summary Delete the group with id supplied
  */
 export declare const deleteGroup1: (id: string) => Promise<unknown>;
-export declare const getDeleteGroup1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof deleteGroup1>>, TError, {
-        id: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof deleteGroup1>>, TError, {
-    id: string;
-}, TContext>;
-export type DeleteGroup1MutationResult = NonNullable<Awaited<ReturnType<typeof deleteGroup1>>>;
-export type DeleteGroup1MutationError = void;
-/**
- * @summary Delete the group with id supplied
- */
-export declare const useDeleteGroup1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof deleteGroup1>>, TError, {
-        id: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof deleteGroup1>>, TError, {
-    id: string;
-}, TContext>;
 /**
  * @summary Return the groups list with specified user id that user has archived
  */
@@ -1258,30 +844,6 @@ export declare function useFindGroupProperties1<TData = Awaited<ReturnType<typeo
  * @summary Return the group with specified id
  */
 export declare const findGroupPropertiesSearch1: (groupId: string, propertyFilterCriteria: PropertyFilterCriteria, signal?: AbortSignal) => Promise<BaseFilterResult>;
-export declare const getFindGroupPropertiesSearch1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof findGroupPropertiesSearch1>>, TError, {
-        groupId: string;
-        data: PropertyFilterCriteria;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof findGroupPropertiesSearch1>>, TError, {
-    groupId: string;
-    data: PropertyFilterCriteria;
-}, TContext>;
-export type FindGroupPropertiesSearch1MutationResult = NonNullable<Awaited<ReturnType<typeof findGroupPropertiesSearch1>>>;
-export type FindGroupPropertiesSearch1MutationBody = PropertyFilterCriteria;
-export type FindGroupPropertiesSearch1MutationError = void;
-/**
- * @summary Return the group with specified id
- */
-export declare const useFindGroupPropertiesSearch1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof findGroupPropertiesSearch1>>, TError, {
-        groupId: string;
-        data: PropertyFilterCriteria;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof findGroupPropertiesSearch1>>, TError, {
-    groupId: string;
-    data: PropertyFilterCriteria;
-}, TContext>;
 /**
  * This will return both owned Groups and Groups the user is a member of
  * @summary Return the groups list with specified user id
@@ -1315,26 +877,6 @@ export declare function useFindGroupsByUser1<TData = Awaited<ReturnType<typeof f
  * @summary Create or update the group supplied
  */
 export declare const saveGroup1: (group: Group, signal?: AbortSignal) => Promise<Group>;
-export declare const getSaveGroup1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof saveGroup1>>, TError, {
-        data: Group;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof saveGroup1>>, TError, {
-    data: Group;
-}, TContext>;
-export type SaveGroup1MutationResult = NonNullable<Awaited<ReturnType<typeof saveGroup1>>>;
-export type SaveGroup1MutationBody = Group;
-export type SaveGroup1MutationError = void;
-/**
- * @summary Create or update the group supplied
- */
-export declare const useSaveGroup1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof saveGroup1>>, TError, {
-        data: Group;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof saveGroup1>>, TError, {
-    data: Group;
-}, TContext>;
 /**
  * @summary Return the groups list with specified user id that are inactive
  */
@@ -1421,55 +963,11 @@ export declare function useFindRequestedGroupsByUser1<TData = Awaited<ReturnType
  * @summary Retrieves property fields filtered by key
  */
 export declare const getPropertyFilters2: (propertyKey: PropertyKey, signal?: AbortSignal) => Promise<unknown>;
-export declare const getGetPropertyFilters2MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof getPropertyFilters2>>, TError, {
-        data: PropertyKey;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof getPropertyFilters2>>, TError, {
-    data: PropertyKey;
-}, TContext>;
-export type GetPropertyFilters2MutationResult = NonNullable<Awaited<ReturnType<typeof getPropertyFilters2>>>;
-export type GetPropertyFilters2MutationBody = PropertyKey;
-export type GetPropertyFilters2MutationError = void;
-/**
- * @summary Retrieves property fields filtered by key
- */
-export declare const useGetPropertyFilters2: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof getPropertyFilters2>>, TError, {
-        data: PropertyKey;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof getPropertyFilters2>>, TError, {
-    data: PropertyKey;
-}, TContext>;
 /**
  * Retrieves options for a specific property filter based on submitted filters
  * @summary Get property field options
  */
 export declare const getPropertyFieldOptions1: (filterId: number, propertyFilterSubmission: PropertyFilterSubmission[], signal?: AbortSignal) => Promise<GetPropertyFieldOptions1200>;
-export declare const getGetPropertyFieldOptions1MutationOptions: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof getPropertyFieldOptions1>>, TError, {
-        filterId: number;
-        data: PropertyFilterSubmission[];
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof getPropertyFieldOptions1>>, TError, {
-    filterId: number;
-    data: PropertyFilterSubmission[];
-}, TContext>;
-export type GetPropertyFieldOptions1MutationResult = NonNullable<Awaited<ReturnType<typeof getPropertyFieldOptions1>>>;
-export type GetPropertyFieldOptions1MutationBody = PropertyFilterSubmission[];
-export type GetPropertyFieldOptions1MutationError = unknown;
-/**
- * @summary Get property field options
- */
-export declare const useGetPropertyFieldOptions1: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof getPropertyFieldOptions1>>, TError, {
-        filterId: number;
-        data: PropertyFilterSubmission[];
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof getPropertyFieldOptions1>>, TError, {
-    filterId: number;
-    data: PropertyFilterSubmission[];
-}, TContext>;
 /**
  * Retrieves a list of property filters, optionally filtered by filter nature IDs
  * @summary Get property filters
@@ -1557,54 +1055,11 @@ export declare function useGetAllPropertyProposals1<TData = Awaited<ReturnType<t
  * @summary Publication state update
  */
 export declare const changePublicationStatus2: (propertyId: string, changePublicationStatus2Body: ChangePublicationStatus2Body, signal?: AbortSignal) => Promise<Property>;
-export declare const getChangePublicationStatus2MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof changePublicationStatus2>>, TError, {
-        propertyId: string;
-        data: ChangePublicationStatus2Body;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof changePublicationStatus2>>, TError, {
-    propertyId: string;
-    data: ChangePublicationStatus2Body;
-}, TContext>;
-export type ChangePublicationStatus2MutationResult = NonNullable<Awaited<ReturnType<typeof changePublicationStatus2>>>;
-export type ChangePublicationStatus2MutationBody = ChangePublicationStatus2Body;
-export type ChangePublicationStatus2MutationError = void;
-/**
- * @summary Publication state update
- */
-export declare const useChangePublicationStatus2: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof changePublicationStatus2>>, TError, {
-        propertyId: string;
-        data: ChangePublicationStatus2Body;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof changePublicationStatus2>>, TError, {
-    propertyId: string;
-    data: ChangePublicationStatus2Body;
-}, TContext>;
 /**
  * This process is not reversible
  * @summary Delete the property with id supplied
  */
 export declare const deleteProperty1: (id: string) => Promise<string>;
-export declare const getDeleteProperty1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof deleteProperty1>>, TError, {
-        id: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof deleteProperty1>>, TError, {
-    id: string;
-}, TContext>;
-export type DeleteProperty1MutationResult = NonNullable<Awaited<ReturnType<typeof deleteProperty1>>>;
-export type DeleteProperty1MutationError = void;
-/**
- * @summary Delete the property with id supplied
- */
-export declare const useDeleteProperty1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof deleteProperty1>>, TError, {
-        id: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof deleteProperty1>>, TError, {
-    id: string;
-}, TContext>;
 /**
  * Returns a randomized list of properties with the specified count limit
  * @summary Fetch random list of properties, with basic data
@@ -1664,26 +1119,6 @@ export declare function useFetchRandomProperties<TData = Awaited<ReturnType<type
  * @summary Search properties with specified filters
  */
 export declare const findProperties1: (propertyFilterCriteria: PropertyFilterCriteria, signal?: AbortSignal) => Promise<Property[]>;
-export declare const getFindProperties1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof findProperties1>>, TError, {
-        data: PropertyFilterCriteria;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof findProperties1>>, TError, {
-    data: PropertyFilterCriteria;
-}, TContext>;
-export type FindProperties1MutationResult = NonNullable<Awaited<ReturnType<typeof findProperties1>>>;
-export type FindProperties1MutationBody = PropertyFilterCriteria;
-export type FindProperties1MutationError = void;
-/**
- * @summary Search properties with specified filters
- */
-export declare const useFindProperties1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof findProperties1>>, TError, {
-        data: PropertyFilterCriteria;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof findProperties1>>, TError, {
-    data: PropertyFilterCriteria;
-}, TContext>;
 /**
  * @deprecated
  * @summary Return the property list with specified user id
@@ -1882,53 +1317,8 @@ export declare function usePreviewProperty2<TData = Awaited<ReturnType<typeof pr
  * @summary Create or update the property supplied
  */
 export declare const saveProperty1: (property: Property, signal?: AbortSignal) => Promise<Property>;
-export declare const getSaveProperty1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof saveProperty1>>, TError, {
-        data: Property;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof saveProperty1>>, TError, {
-    data: Property;
-}, TContext>;
-export type SaveProperty1MutationResult = NonNullable<Awaited<ReturnType<typeof saveProperty1>>>;
-export type SaveProperty1MutationBody = Property;
-export type SaveProperty1MutationError = void;
-/**
- * @summary Create or update the property supplied
- */
-export declare const useSaveProperty1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof saveProperty1>>, TError, {
-        data: Property;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof saveProperty1>>, TError, {
-    data: Property;
-}, TContext>;
 export declare const sendAlert2: (weeklyAlertRange: WeeklyAlertRange, signal?: AbortSignal) => Promise<number>;
-export declare const getSendAlert2MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof sendAlert2>>, TError, {
-        data: WeeklyAlertRange;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof sendAlert2>>, TError, {
-    data: WeeklyAlertRange;
-}, TContext>;
-export type SendAlert2MutationResult = NonNullable<Awaited<ReturnType<typeof sendAlert2>>>;
-export type SendAlert2MutationBody = WeeklyAlertRange;
-export type SendAlert2MutationError = void;
-export declare const useSendAlert2: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof sendAlert2>>, TError, {
-        data: WeeklyAlertRange;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof sendAlert2>>, TError, {
-    data: WeeklyAlertRange;
-}, TContext>;
 export declare const sendGroupAlert1: (signal?: AbortSignal) => Promise<number>;
-export declare const getSendGroupAlert1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof sendGroupAlert1>>, TError, void, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof sendGroupAlert1>>, TError, void, TContext>;
-export type SendGroupAlert1MutationResult = NonNullable<Awaited<ReturnType<typeof sendGroupAlert1>>>;
-export type SendGroupAlert1MutationError = void;
-export declare const useSendGroupAlert1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof sendGroupAlert1>>, TError, void, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof sendGroupAlert1>>, TError, void, TContext>;
 /**
  * Retrieves a list of all property types available in the system, including their IDs, names, language keys, active status, and associated property type groups.
  * @summary Get all property types
@@ -1961,29 +1351,6 @@ export declare function useGetAllPropertyTypes1<TData = Awaited<ReturnType<typeo
  * @summary Publication state update
  */
 export declare const changePublicationStatus: (testimonialId: string, publicationState: boolean, signal?: AbortSignal) => Promise<Testimonial>;
-export declare const getChangePublicationStatusMutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof changePublicationStatus>>, TError, {
-        testimonialId: string;
-        publicationState: boolean;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof changePublicationStatus>>, TError, {
-    testimonialId: string;
-    publicationState: boolean;
-}, TContext>;
-export type ChangePublicationStatusMutationResult = NonNullable<Awaited<ReturnType<typeof changePublicationStatus>>>;
-export type ChangePublicationStatusMutationError = void;
-/**
- * @summary Publication state update
- */
-export declare const useChangePublicationStatus: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof changePublicationStatus>>, TError, {
-        testimonialId: string;
-        publicationState: boolean;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof changePublicationStatus>>, TError, {
-    testimonialId: string;
-    publicationState: boolean;
-}, TContext>;
 /**
  * @summary Fetch User Posted list of testimonials
  */
@@ -2043,26 +1410,6 @@ export declare function useFetchReceivedTestimonials1<TData = Awaited<ReturnType
  * @summary Create or update the Testimonial supplied
  */
 export declare const saveTestimonial1: (testimonial: Testimonial, signal?: AbortSignal) => Promise<Testimonial>;
-export declare const getSaveTestimonial1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof saveTestimonial1>>, TError, {
-        data: Testimonial;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof saveTestimonial1>>, TError, {
-    data: Testimonial;
-}, TContext>;
-export type SaveTestimonial1MutationResult = NonNullable<Awaited<ReturnType<typeof saveTestimonial1>>>;
-export type SaveTestimonial1MutationBody = Testimonial;
-export type SaveTestimonial1MutationError = void;
-/**
- * @summary Create or update the Testimonial supplied
- */
-export declare const useSaveTestimonial1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof saveTestimonial1>>, TError, {
-        data: Testimonial;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof saveTestimonial1>>, TError, {
-    data: Testimonial;
-}, TContext>;
 /**
  * @summary Return the testimonial with specified id, it needs to be published
  */
@@ -2202,43 +1549,7 @@ export declare function useFindTestimonialsByUser1<TData = Awaited<ReturnType<ty
  * @summary Request testimonial from specified user id
  */
 export declare const requestTestimonialFromUser1: (id: string, signal?: AbortSignal) => Promise<TestimonialRequest>;
-export declare const getRequestTestimonialFromUser1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof requestTestimonialFromUser1>>, TError, {
-        id: string;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof requestTestimonialFromUser1>>, TError, {
-    id: string;
-}, TContext>;
-export type RequestTestimonialFromUser1MutationResult = NonNullable<Awaited<ReturnType<typeof requestTestimonialFromUser1>>>;
-export type RequestTestimonialFromUser1MutationError = void;
-/**
- * @summary Request testimonial from specified user id
- */
-export declare const useRequestTestimonialFromUser1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof requestTestimonialFromUser1>>, TError, {
-        id: string;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof requestTestimonialFromUser1>>, TError, {
-    id: string;
-}, TContext>;
 export declare const saveLog1: (logEntry: LogEntry, signal?: AbortSignal) => Promise<unknown>;
-export declare const getSaveLog1MutationOptions: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof saveLog1>>, TError, {
-        data: LogEntry;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof saveLog1>>, TError, {
-    data: LogEntry;
-}, TContext>;
-export type SaveLog1MutationResult = NonNullable<Awaited<ReturnType<typeof saveLog1>>>;
-export type SaveLog1MutationBody = LogEntry;
-export type SaveLog1MutationError = unknown;
-export declare const useSaveLog1: <TError = unknown, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof saveLog1>>, TError, {
-        data: LogEntry;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof saveLog1>>, TError, {
-    data: LogEntry;
-}, TContext>;
 /**
  * In this email it will be contained all process information to change password and recover access
  * @summary Send an email to user that has forgotted his/her password
@@ -2271,26 +1582,6 @@ export declare function useSendEmail1<TData = Awaited<ReturnType<typeof sendEmai
  * @summary Update the password user, finishing the recovery password process
  */
 export declare const updatePassword1: (passwordRecoveryRequest: PasswordRecoveryRequest, signal?: AbortSignal) => Promise<unknown>;
-export declare const getUpdatePassword1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof updatePassword1>>, TError, {
-        data: PasswordRecoveryRequest;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof updatePassword1>>, TError, {
-    data: PasswordRecoveryRequest;
-}, TContext>;
-export type UpdatePassword1MutationResult = NonNullable<Awaited<ReturnType<typeof updatePassword1>>>;
-export type UpdatePassword1MutationBody = PasswordRecoveryRequest;
-export type UpdatePassword1MutationError = void;
-/**
- * @summary Update the password user, finishing the recovery password process
- */
-export declare const useUpdatePassword1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof updatePassword1>>, TError, {
-        data: PasswordRecoveryRequest;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof updatePassword1>>, TError, {
-    data: PasswordRecoveryRequest;
-}, TContext>;
 /**
  * @summary Validate that password recovery token supplied was valid and current
  */
@@ -2351,98 +1642,18 @@ export declare function useAuthorize1<TData = Awaited<ReturnType<typeof authoriz
  * @summary Exchange authorization code for access token
  */
 export declare const requestToken1: (requestToken1Body: RequestToken1Body, signal?: AbortSignal) => Promise<AuthInfoDto>;
-export declare const getRequestToken1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof requestToken1>>, TError, {
-        data: RequestToken1Body;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof requestToken1>>, TError, {
-    data: RequestToken1Body;
-}, TContext>;
-export type RequestToken1MutationResult = NonNullable<Awaited<ReturnType<typeof requestToken1>>>;
-export type RequestToken1MutationBody = RequestToken1Body;
-export type RequestToken1MutationError = void;
-/**
- * @summary Exchange authorization code for access token
- */
-export declare const useRequestToken1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof requestToken1>>, TError, {
-        data: RequestToken1Body;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof requestToken1>>, TError, {
-    data: RequestToken1Body;
-}, TContext>;
 /**
  * @summary Create checkout-session
  */
 export declare const createCheckoutSession2: (checkoutSessionDto: CheckoutSessionDto, signal?: AbortSignal) => Promise<void>;
-export declare const getCreateCheckoutSession2MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof createCheckoutSession2>>, TError, {
-        data: CheckoutSessionDto;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof createCheckoutSession2>>, TError, {
-    data: CheckoutSessionDto;
-}, TContext>;
-export type CreateCheckoutSession2MutationResult = NonNullable<Awaited<ReturnType<typeof createCheckoutSession2>>>;
-export type CreateCheckoutSession2MutationBody = CheckoutSessionDto;
-export type CreateCheckoutSession2MutationError = void;
-/**
- * @summary Create checkout-session
- */
-export declare const useCreateCheckoutSession2: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof createCheckoutSession2>>, TError, {
-        data: CheckoutSessionDto;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof createCheckoutSession2>>, TError, {
-    data: CheckoutSessionDto;
-}, TContext>;
 /**
  * @summary Create checkout-session
  */
 export declare const createCheckoutSession: (customerSessionDto: CustomerSessionDto, signal?: AbortSignal) => Promise<void>;
-export declare const getCreateCheckoutSessionMutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof createCheckoutSession>>, TError, {
-        data: CustomerSessionDto;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof createCheckoutSession>>, TError, {
-    data: CustomerSessionDto;
-}, TContext>;
-export type CreateCheckoutSessionMutationResult = NonNullable<Awaited<ReturnType<typeof createCheckoutSession>>>;
-export type CreateCheckoutSessionMutationBody = CustomerSessionDto;
-export type CreateCheckoutSessionMutationError = void;
-/**
- * @summary Create checkout-session
- */
-export declare const useCreateCheckoutSession: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof createCheckoutSession>>, TError, {
-        data: CustomerSessionDto;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof createCheckoutSession>>, TError, {
-    data: CustomerSessionDto;
-}, TContext>;
 /**
  * @summary Notify user subscription change
  */
 export declare const postUserSubscriptionChange1: (stripeEvent: StripeEvent, signal?: AbortSignal) => Promise<unknown>;
-export declare const getPostUserSubscriptionChange1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof postUserSubscriptionChange1>>, TError, {
-        data: StripeEvent;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof postUserSubscriptionChange1>>, TError, {
-    data: StripeEvent;
-}, TContext>;
-export type PostUserSubscriptionChange1MutationResult = NonNullable<Awaited<ReturnType<typeof postUserSubscriptionChange1>>>;
-export type PostUserSubscriptionChange1MutationBody = StripeEvent;
-export type PostUserSubscriptionChange1MutationError = void;
-/**
- * @summary Notify user subscription change
- */
-export declare const usePostUserSubscriptionChange1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof postUserSubscriptionChange1>>, TError, {
-        data: StripeEvent;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof postUserSubscriptionChange1>>, TError, {
-    data: StripeEvent;
-}, TContext>;
 /**
  * @summary Return the active and available subscription plans
  */
@@ -2523,29 +1734,6 @@ export declare function useGetActiveFeatures1<TData = Awaited<ReturnType<typeof 
  * @summary Delete an alert
  */
 export declare const deleteAlert1: (userId: number, alertId: number) => Promise<string>;
-export declare const getDeleteAlert1MutationOptions: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof deleteAlert1>>, TError, {
-        userId: number;
-        alertId: number;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof deleteAlert1>>, TError, {
-    userId: number;
-    alertId: number;
-}, TContext>;
-export type DeleteAlert1MutationResult = NonNullable<Awaited<ReturnType<typeof deleteAlert1>>>;
-export type DeleteAlert1MutationError = string;
-/**
- * @summary Delete an alert
- */
-export declare const useDeleteAlert1: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof deleteAlert1>>, TError, {
-        userId: number;
-        alertId: number;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof deleteAlert1>>, TError, {
-    userId: number;
-    alertId: number;
-}, TContext>;
 /**
  * Retrieves the results for a specific alert
  * @summary Get alert results
@@ -2607,30 +1795,6 @@ export declare function useGetByUser2<TData = Awaited<ReturnType<typeof getByUse
  * @summary Create a new alert
  */
 export declare const saveAlert1: (userId: number, alert: Alert, signal?: AbortSignal) => Promise<Alert>;
-export declare const getSaveAlert1MutationOptions: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof saveAlert1>>, TError, {
-        userId: number;
-        data: Alert;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof saveAlert1>>, TError, {
-    userId: number;
-    data: Alert;
-}, TContext>;
-export type SaveAlert1MutationResult = NonNullable<Awaited<ReturnType<typeof saveAlert1>>>;
-export type SaveAlert1MutationBody = Alert;
-export type SaveAlert1MutationError = string;
-/**
- * @summary Create a new alert
- */
-export declare const useSaveAlert1: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof saveAlert1>>, TError, {
-        userId: number;
-        data: Alert;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof saveAlert1>>, TError, {
-    userId: number;
-    data: Alert;
-}, TContext>;
 /**
  * Retrieves all newsletters that the specified user has subscribed to
  * @summary Get newsletters subscribed to
@@ -2692,25 +1856,6 @@ export declare function useNewsletterSubscribers1<TData = Awaited<ReturnType<typ
  * @summary Send customized property alerts
  */
 export declare const sendAlert: (userId: number, signal?: AbortSignal) => Promise<string>;
-export declare const getSendAlertMutationOptions: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof sendAlert>>, TError, {
-        userId: number;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof sendAlert>>, TError, {
-    userId: number;
-}, TContext>;
-export type SendAlertMutationResult = NonNullable<Awaited<ReturnType<typeof sendAlert>>>;
-export type SendAlertMutationError = string;
-/**
- * @summary Send customized property alerts
- */
-export declare const useSendAlert: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof sendAlert>>, TError, {
-        userId: number;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof sendAlert>>, TError, {
-    userId: number;
-}, TContext>;
 /**
  * Returns a list of all available brokerages in the system
  * @summary Retrieve all brokerages
@@ -2800,87 +1945,16 @@ export declare function useGetByUser<TData = Awaited<ReturnType<typeof getByUser
  * @summary Add a favorite
  */
 export declare const postUserFavorite1: (userId: number, favorite: Favorite, signal?: AbortSignal) => Promise<Favorite>;
-export declare const getPostUserFavorite1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof postUserFavorite1>>, TError, {
-        userId: number;
-        data: Favorite;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof postUserFavorite1>>, TError, {
-    userId: number;
-    data: Favorite;
-}, TContext>;
-export type PostUserFavorite1MutationResult = NonNullable<Awaited<ReturnType<typeof postUserFavorite1>>>;
-export type PostUserFavorite1MutationBody = Favorite;
-export type PostUserFavorite1MutationError = void;
-/**
- * @summary Add a favorite
- */
-export declare const usePostUserFavorite1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof postUserFavorite1>>, TError, {
-        userId: number;
-        data: Favorite;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof postUserFavorite1>>, TError, {
-    userId: number;
-    data: Favorite;
-}, TContext>;
 /**
  * Removes a specific favorite from a user's favorites list
  * @summary Remove a favorite
  */
 export declare const removeUserFavorite1: (userId: number, favoriteId: number) => Promise<unknown>;
-export declare const getRemoveUserFavorite1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof removeUserFavorite1>>, TError, {
-        userId: number;
-        favoriteId: number;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof removeUserFavorite1>>, TError, {
-    userId: number;
-    favoriteId: number;
-}, TContext>;
-export type RemoveUserFavorite1MutationResult = NonNullable<Awaited<ReturnType<typeof removeUserFavorite1>>>;
-export type RemoveUserFavorite1MutationError = void;
-/**
- * @summary Remove a favorite
- */
-export declare const useRemoveUserFavorite1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof removeUserFavorite1>>, TError, {
-        userId: number;
-        favoriteId: number;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof removeUserFavorite1>>, TError, {
-    userId: number;
-    favoriteId: number;
-}, TContext>;
 /**
  * Searches for users within a specific group matching the specified filter criteria
  * @summary Search users within a specified group
  */
 export declare const searchGroupUsers1: (groupId: string, userFilterRequest: UserFilterRequest, signal?: AbortSignal) => Promise<UserFilterResult>;
-export declare const getSearchGroupUsers1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof searchGroupUsers1>>, TError, {
-        groupId: string;
-        data: UserFilterRequest;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof searchGroupUsers1>>, TError, {
-    groupId: string;
-    data: UserFilterRequest;
-}, TContext>;
-export type SearchGroupUsers1MutationResult = NonNullable<Awaited<ReturnType<typeof searchGroupUsers1>>>;
-export type SearchGroupUsers1MutationBody = UserFilterRequest;
-export type SearchGroupUsers1MutationError = void;
-/**
- * @summary Search users within a specified group
- */
-export declare const useSearchGroupUsers1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof searchGroupUsers1>>, TError, {
-        groupId: string;
-        data: UserFilterRequest;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof searchGroupUsers1>>, TError, {
-    groupId: string;
-    data: UserFilterRequest;
-}, TContext>;
 /**
  * Returns a list of all available user skills in the system
  * @summary Retrieve all user skills
@@ -2970,55 +2044,11 @@ export declare function useActivateUser1<TData = Awaited<ReturnType<typeof activ
  * @summary Verify the phone code sent to user
  */
 export declare const checkPhoneVerificationCodeCommand1: (userId: number, phoneCodeCheckResource: PhoneCodeCheckResource, signal?: AbortSignal) => Promise<PhoneCodeCheckResource>;
-export declare const getCheckPhoneVerificationCodeCommand1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof checkPhoneVerificationCodeCommand1>>, TError, {
-        userId: number;
-        data: PhoneCodeCheckResource;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof checkPhoneVerificationCodeCommand1>>, TError, {
-    userId: number;
-    data: PhoneCodeCheckResource;
-}, TContext>;
-export type CheckPhoneVerificationCodeCommand1MutationResult = NonNullable<Awaited<ReturnType<typeof checkPhoneVerificationCodeCommand1>>>;
-export type CheckPhoneVerificationCodeCommand1MutationBody = PhoneCodeCheckResource;
-export type CheckPhoneVerificationCodeCommand1MutationError = void;
-/**
- * @summary Verify the phone code sent to user
- */
-export declare const useCheckPhoneVerificationCodeCommand1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof checkPhoneVerificationCodeCommand1>>, TError, {
-        userId: number;
-        data: PhoneCodeCheckResource;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof checkPhoneVerificationCodeCommand1>>, TError, {
-    userId: number;
-    data: PhoneCodeCheckResource;
-}, TContext>;
 /**
  * Retrieves a random selection of users based on specified criteria
  * @summary Fetch random list of users, with basic data
  */
 export declare const fetchRandomUsers1: (userListRequest: UserListRequest, signal?: AbortSignal) => Promise<SkilledUser[]>;
-export declare const getFetchRandomUsers1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof fetchRandomUsers1>>, TError, {
-        data: UserListRequest;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof fetchRandomUsers1>>, TError, {
-    data: UserListRequest;
-}, TContext>;
-export type FetchRandomUsers1MutationResult = NonNullable<Awaited<ReturnType<typeof fetchRandomUsers1>>>;
-export type FetchRandomUsers1MutationBody = UserListRequest;
-export type FetchRandomUsers1MutationError = void;
-/**
- * @summary Fetch random list of users, with basic data
- */
-export declare const useFetchRandomUsers1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof fetchRandomUsers1>>, TError, {
-        data: UserListRequest;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof fetchRandomUsers1>>, TError, {
-    data: UserListRequest;
-}, TContext>;
 /**
  * Gets detailed user information by user ID
  * @summary Fetch user detail according to its id
@@ -3080,26 +2110,6 @@ export declare function useFind1<TData = Awaited<ReturnType<typeof find1>>, TErr
  * @summary Save the data of user in the system
  */
 export declare const save: (skilledUser: SkilledUser, signal?: AbortSignal) => Promise<string>;
-export declare const getSaveMutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof save>>, TError, {
-        data: SkilledUser;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof save>>, TError, {
-    data: SkilledUser;
-}, TContext>;
-export type SaveMutationResult = NonNullable<Awaited<ReturnType<typeof save>>>;
-export type SaveMutationBody = SkilledUser;
-export type SaveMutationError = void;
-/**
- * @summary Save the data of user in the system
- */
-export declare const useSave: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof save>>, TError, {
-        data: SkilledUser;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof save>>, TError, {
-    data: SkilledUser;
-}, TContext>;
 /**
  * Gets detailed information for multiple users by their IDs
  * @summary Fetch multiple user detail according to its ids
@@ -3217,80 +2227,16 @@ export declare function usePreviewProperty<TData = Awaited<ReturnType<typeof pre
  * @summary Register new user in the system
  */
 export declare const register1: (skilledUser: SkilledUser, params?: Register1Params, signal?: AbortSignal) => Promise<unknown>;
-export declare const getRegister1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof register1>>, TError, {
-        data: SkilledUser;
-        params?: Register1Params;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof register1>>, TError, {
-    data: SkilledUser;
-    params?: Register1Params;
-}, TContext>;
-export type Register1MutationResult = NonNullable<Awaited<ReturnType<typeof register1>>>;
-export type Register1MutationBody = SkilledUser;
-export type Register1MutationError = void;
-/**
- * @summary Register new user in the system
- */
-export declare const useRegister1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof register1>>, TError, {
-        data: SkilledUser;
-        params?: Register1Params;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof register1>>, TError, {
-    data: SkilledUser;
-    params?: Register1Params;
-}, TContext>;
 /**
  * Sends an activation link to the user's email for account verification
  * @summary Request activation link
  */
 export declare const requestActivationLink1: (requestActivationLink1Body: RequestActivationLink1Body, signal?: AbortSignal) => Promise<void>;
-export declare const getRequestActivationLink1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof requestActivationLink1>>, TError, {
-        data: RequestActivationLink1Body;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof requestActivationLink1>>, TError, {
-    data: RequestActivationLink1Body;
-}, TContext>;
-export type RequestActivationLink1MutationResult = NonNullable<Awaited<ReturnType<typeof requestActivationLink1>>>;
-export type RequestActivationLink1MutationBody = RequestActivationLink1Body;
-export type RequestActivationLink1MutationError = void;
-/**
- * @summary Request activation link
- */
-export declare const useRequestActivationLink1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof requestActivationLink1>>, TError, {
-        data: RequestActivationLink1Body;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof requestActivationLink1>>, TError, {
-    data: RequestActivationLink1Body;
-}, TContext>;
 /**
  * Searches for users matching the specified filter criteria
  * @summary Search users with specified filters
  */
 export declare const searchUsers1: (userFilterRequest: UserFilterRequest, signal?: AbortSignal) => Promise<UserFilterResult>;
-export declare const getSearchUsers1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof searchUsers1>>, TError, {
-        data: UserFilterRequest;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof searchUsers1>>, TError, {
-    data: UserFilterRequest;
-}, TContext>;
-export type SearchUsers1MutationResult = NonNullable<Awaited<ReturnType<typeof searchUsers1>>>;
-export type SearchUsers1MutationBody = UserFilterRequest;
-export type SearchUsers1MutationError = void;
-/**
- * @summary Search users with specified filters
- */
-export declare const useSearchUsers1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof searchUsers1>>, TError, {
-        data: UserFilterRequest;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof searchUsers1>>, TError, {
-    data: UserFilterRequest;
-}, TContext>;
 export declare const sendPayedSusbscribersAlert1: (signal?: AbortSignal) => Promise<unknown>;
 export declare const getSendPayedSusbscribersAlert1QueryKey: () => readonly ["/users/weekly-payed-subscribers-alert"];
 export declare const getSendPayedSusbscribersAlert1QueryOptions: <TData = Awaited<ReturnType<typeof sendPayedSusbscribersAlert1>>, TError = unknown>(options?: {
@@ -3320,30 +2266,6 @@ export declare function useSendPayedSusbscribersAlert1<TData = Awaited<ReturnTyp
  * @summary Send a code to the previously saved phone number of the user
  */
 export declare const sendPhoneVerificationCodeCommand1: (userId: number, phoneCodeRequestResource: PhoneCodeRequestResource, signal?: AbortSignal) => Promise<PhoneCodeRequestResource>;
-export declare const getSendPhoneVerificationCodeCommand1MutationOptions: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof sendPhoneVerificationCodeCommand1>>, TError, {
-        userId: number;
-        data: PhoneCodeRequestResource;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof sendPhoneVerificationCodeCommand1>>, TError, {
-    userId: number;
-    data: PhoneCodeRequestResource;
-}, TContext>;
-export type SendPhoneVerificationCodeCommand1MutationResult = NonNullable<Awaited<ReturnType<typeof sendPhoneVerificationCodeCommand1>>>;
-export type SendPhoneVerificationCodeCommand1MutationBody = PhoneCodeRequestResource;
-export type SendPhoneVerificationCodeCommand1MutationError = void;
-/**
- * @summary Send a code to the previously saved phone number of the user
- */
-export declare const useSendPhoneVerificationCodeCommand1: <TError = void, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof sendPhoneVerificationCodeCommand1>>, TError, {
-        userId: number;
-        data: PhoneCodeRequestResource;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof sendPhoneVerificationCodeCommand1>>, TError, {
-    userId: number;
-    data: PhoneCodeRequestResource;
-}, TContext>;
 /**
  * Returns all skills associated with a user
  * @summary Retrieve user skills
@@ -3377,30 +2299,6 @@ export declare function useRetrieveUserSkills<TData = Awaited<ReturnType<typeof 
  * @summary Add user skills
  */
 export declare const addUserSkills1: (userId: number, userSkill: UserSkill[], signal?: AbortSignal) => Promise<unknown>;
-export declare const getAddUserSkills1MutationOptions: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof addUserSkills1>>, TError, {
-        userId: number;
-        data: UserSkill[];
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof addUserSkills1>>, TError, {
-    userId: number;
-    data: UserSkill[];
-}, TContext>;
-export type AddUserSkills1MutationResult = NonNullable<Awaited<ReturnType<typeof addUserSkills1>>>;
-export type AddUserSkills1MutationBody = UserSkill[];
-export type AddUserSkills1MutationError = string;
-/**
- * @summary Add user skills
- */
-export declare const useAddUserSkills1: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof addUserSkills1>>, TError, {
-        userId: number;
-        data: UserSkill[];
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof addUserSkills1>>, TError, {
-    userId: number;
-    data: UserSkill[];
-}, TContext>;
 /**
  * Returns all endorsements for a specific user skill
  * @summary Retrieve skill endorsements
@@ -3434,31 +2332,3 @@ export declare function useRetrieveSkillEndorsements1<TData = Awaited<ReturnType
  * @summary Endorse a user skill
  */
 export declare const endorseUserSkill1: (userId: number, skillId: number, skillEndorsement: SkillEndorsement, signal?: AbortSignal) => Promise<SkillEndorsement>;
-export declare const getEndorseUserSkill1MutationOptions: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof endorseUserSkill1>>, TError, {
-        userId: number;
-        skillId: number;
-        data: SkillEndorsement;
-    }, TContext>;
-}) => UseMutationOptions<Awaited<ReturnType<typeof endorseUserSkill1>>, TError, {
-    userId: number;
-    skillId: number;
-    data: SkillEndorsement;
-}, TContext>;
-export type EndorseUserSkill1MutationResult = NonNullable<Awaited<ReturnType<typeof endorseUserSkill1>>>;
-export type EndorseUserSkill1MutationBody = SkillEndorsement;
-export type EndorseUserSkill1MutationError = string;
-/**
- * @summary Endorse a user skill
- */
-export declare const useEndorseUserSkill1: <TError = string, TContext = unknown>(options?: {
-    mutation?: UseMutationOptions<Awaited<ReturnType<typeof endorseUserSkill1>>, TError, {
-        userId: number;
-        skillId: number;
-        data: SkillEndorsement;
-    }, TContext>;
-}, queryClient?: QueryClient) => UseMutationResult<Awaited<ReturnType<typeof endorseUserSkill1>>, TError, {
-    userId: number;
-    skillId: number;
-    data: SkillEndorsement;
-}, TContext>;

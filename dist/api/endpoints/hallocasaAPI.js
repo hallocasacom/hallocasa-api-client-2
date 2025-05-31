@@ -1,13 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getGetAllCountries2QueryKey = exports.getAllCountries2 = exports.getGet2QueryOptions = exports.getGet2QueryKey = exports.get2 = exports.getRetrieveChatUserStatus1QueryOptions = exports.getRetrieveChatUserStatus1QueryKey = exports.retrieveChatUserStatus1 = exports.getRetrieveChatUser1QueryOptions = exports.getRetrieveChatUser1QueryKey = exports.retrieveChatUser1 = exports.useGetByUserWithResult1 = exports.getGetByUserWithResult1MutationOptions = exports.getByUserWithResult1 = exports.useSendMessage1 = exports.getSendMessage1MutationOptions = exports.sendMessage1 = exports.getGetConversation1QueryOptions = exports.getGetConversation1QueryKey = exports.getConversation1 = exports.useSave2 = exports.getSave2MutationOptions = exports.save2 = exports.getFindUserContracts1QueryOptions = exports.getFindUserContracts1QueryKey = exports.findUserContracts1 = exports.getFindUserConnections2QueryOptions = exports.getFindUserConnections2QueryKey = exports.findUserConnections2 = exports.getRetrieveUserTicket1QueryOptions = exports.getRetrieveUserTicket1QueryKey = exports.retrieveUserTicket1 = exports.getGetChatSummaryByUser1QueryOptions = exports.getGetChatSummaryByUser1QueryKey = exports.getChatSummaryByUser1 = exports.useUpdateChatAllowance1 = exports.getUpdateChatAllowance1MutationOptions = exports.updateChatAllowance1 = exports.getGetChatAllowance1QueryOptions = exports.getGetChatAllowance1QueryKey = exports.getChatAllowance1 = exports.useUpdateAttachment1 = exports.getUpdateAttachment1MutationOptions = exports.updateAttachment1 = exports.getRetrieveAttachment1QueryOptions = exports.getRetrieveAttachment1QueryKey = exports.retrieveAttachment1 = exports.useCreateAttachment1 = exports.getCreateAttachment1MutationOptions = exports.createAttachment1 = void 0;
-exports.uploadPropertiesFromUrl1 = exports.useUploadProperties1 = exports.getUploadProperties1MutationOptions = exports.uploadProperties1 = exports.useUploadKyeroPropertiesFromUrl1 = exports.getUploadKyeroPropertiesFromUrl1MutationOptions = exports.uploadKyeroPropertiesFromUrl1 = exports.useUploadKyeroProperties2 = exports.getUploadKyeroProperties2MutationOptions = exports.uploadKyeroProperties2 = exports.getGetFormats1QueryOptions = exports.getGetFormats1QueryKey = exports.getFormats1 = exports.getXmlRedirect1QueryOptions = exports.getXmlRedirect1QueryKey = exports.xmlRedirect1 = exports.getXml1QueryOptions = exports.getXml1QueryKey = exports.xml1 = exports.useTriggerKyeroExport1 = exports.getTriggerKyeroExport1MutationOptions = exports.triggerKyeroExport1 = exports.getTranslateText1QueryOptions = exports.getTranslateText1QueryKey = exports.translateText1 = exports.getGetLanguages1QueryOptions = exports.getGetLanguages1QueryKey = exports.getLanguages1 = exports.getFind3QueryOptions = exports.getFind3QueryKey = exports.find3 = exports.useDelete1 = exports.getDelete1MutationOptions = exports.delete1 = exports.getGetAllLanguages1QueryOptions = exports.getGetAllLanguages1QueryKey = exports.getAllLanguages1 = exports.getGetGeoLocationsByLatLng1QueryOptions = exports.getGetGeoLocationsByLatLng1QueryKey = exports.getGeoLocationsByLatLng1 = exports.getFindExchangeRates1QueryOptions = exports.getFindExchangeRates1QueryKey = exports.findExchangeRates1 = exports.getGetCurrencies1QueryOptions = exports.getGetCurrencies1QueryKey = exports.getCurrencies1 = exports.getGetCountryByIp1QueryOptions = exports.getGetCountryByIp1QueryKey = exports.getCountryByIp1 = exports.getGetAllCountries2QueryOptions = void 0;
-exports.useSaveGroup1 = exports.getSaveGroup1MutationOptions = exports.saveGroup1 = exports.getFindGroupsByUser1QueryOptions = exports.getFindGroupsByUser1QueryKey = exports.findGroupsByUser1 = exports.useFindGroupPropertiesSearch1 = exports.getFindGroupPropertiesSearch1MutationOptions = exports.findGroupPropertiesSearch1 = exports.getFindGroupProperties1QueryOptions = exports.getFindGroupProperties1QueryKey = exports.findGroupProperties1 = exports.getFindGroup1QueryOptions = exports.getFindGroup1QueryKey = exports.findGroup1 = exports.getFindArchivedGroupsByUser1QueryOptions = exports.getFindArchivedGroupsByUser1QueryKey = exports.findArchivedGroupsByUser1 = exports.useDeleteGroup1 = exports.getDeleteGroup1MutationOptions = exports.deleteGroup1 = exports.useDeactivateGroup1 = exports.getDeactivateGroup1MutationOptions = exports.deactivateGroup1 = exports.useArchiveGroup1 = exports.getArchiveGroup1MutationOptions = exports.archiveGroup1 = exports.useUpdateGroupMembershipStatus1 = exports.getUpdateGroupMembershipStatus1MutationOptions = exports.updateGroupMembershipStatus1 = exports.useGroupRequest1 = exports.getGroupRequest1MutationOptions = exports.groupRequest1 = exports.useGroupLeave1 = exports.getGroupLeave1MutationOptions = exports.groupLeave1 = exports.useGroupInvite = exports.getGroupInviteMutationOptions = exports.groupInvite = exports.useGroupInvite2 = exports.getGroupInvite2MutationOptions = exports.groupInvite2 = exports.getGetGroupMembers1QueryOptions = exports.getGetGroupMembers1QueryKey = exports.getGroupMembers1 = exports.getUploadKyeroPropertiesQueryOptions = exports.getUploadKyeroPropertiesQueryKey = exports.uploadKyeroProperties = exports.useUploadPropertiesFromUrl1 = exports.getUploadPropertiesFromUrl1MutationOptions = void 0;
-exports.getGetDraftsProperties1QueryKey = exports.getDraftsProperties1 = exports.getFindPropertyOldUrl1QueryOptions = exports.getFindPropertyOldUrl1QueryKey = exports.findPropertyOldUrl1 = exports.getFindProperty1QueryOptions = exports.getFindProperty1QueryKey = exports.findProperty1 = exports.getFindPropertiesByLocationRange1QueryOptions = exports.getFindPropertiesByLocationRange1QueryKey = exports.findPropertiesByLocationRange1 = exports.useFindProperties1 = exports.getFindProperties1MutationOptions = exports.findProperties1 = exports.getFetchRandomPropertiesQueryOptions = exports.getFetchRandomPropertiesQueryKey = exports.fetchRandomProperties = exports.getFetchRandomProperties2QueryOptions = exports.getFetchRandomProperties2QueryKey = exports.fetchRandomProperties2 = exports.useDeleteProperty1 = exports.getDeleteProperty1MutationOptions = exports.deleteProperty1 = exports.useChangePublicationStatus2 = exports.getChangePublicationStatus2MutationOptions = exports.changePublicationStatus2 = exports.getGetAllPropertyProposals1QueryOptions = exports.getGetAllPropertyProposals1QueryKey = exports.getAllPropertyProposals1 = exports.getGetAllCountriesQueryOptions = exports.getGetAllCountriesQueryKey = exports.getAllCountries = exports.getGetPropertyFiltersQueryOptions = exports.getGetPropertyFiltersQueryKey = exports.getPropertyFilters = exports.useGetPropertyFieldOptions1 = exports.getGetPropertyFieldOptions1MutationOptions = exports.getPropertyFieldOptions1 = exports.useGetPropertyFilters2 = exports.getGetPropertyFilters2MutationOptions = exports.getPropertyFilters2 = exports.getFindRequestedGroupsByUser1QueryOptions = exports.getFindRequestedGroupsByUser1QueryKey = exports.findRequestedGroupsByUser1 = exports.getFindInvitedGroupsByUser1QueryOptions = exports.getFindInvitedGroupsByUser1QueryKey = exports.findInvitedGroupsByUser1 = exports.getFindInactiveGroupsByUser1QueryOptions = exports.getFindInactiveGroupsByUser1QueryKey = exports.findInactiveGroupsByUser1 = void 0;
-exports.requestTestimonialFromUser1 = exports.getFindTestimonialsByUser1QueryOptions = exports.getFindTestimonialsByUser1QueryKey = exports.findTestimonialsByUser1 = exports.getFindPropertiesByUser1QueryOptions = exports.getFindPropertiesByUser1QueryKey = exports.findPropertiesByUser1 = exports.getFindTestimonialRequestsReceived1QueryOptions = exports.getFindTestimonialRequestsReceived1QueryKey = exports.findTestimonialRequestsReceived1 = exports.getFindTestimonialRequests1QueryOptions = exports.getFindTestimonialRequests1QueryKey = exports.findTestimonialRequests1 = exports.getFindTestimonial1QueryOptions = exports.getFindTestimonial1QueryKey = exports.findTestimonial1 = exports.useSaveTestimonial1 = exports.getSaveTestimonial1MutationOptions = exports.saveTestimonial1 = exports.getFetchReceivedTestimonials1QueryOptions = exports.getFetchReceivedTestimonials1QueryKey = exports.fetchReceivedTestimonials1 = exports.getFetchPublishedTestimonials1QueryOptions = exports.getFetchPublishedTestimonials1QueryKey = exports.fetchPublishedTestimonials1 = exports.useChangePublicationStatus = exports.getChangePublicationStatusMutationOptions = exports.changePublicationStatus = exports.getGetAllPropertyTypes1QueryOptions = exports.getGetAllPropertyTypes1QueryKey = exports.getAllPropertyTypes1 = exports.useSendGroupAlert1 = exports.getSendGroupAlert1MutationOptions = exports.sendGroupAlert1 = exports.useSendAlert2 = exports.getSendAlert2MutationOptions = exports.sendAlert2 = exports.useSaveProperty1 = exports.getSaveProperty1MutationOptions = exports.saveProperty1 = exports.getPreviewProperty2QueryOptions = exports.getPreviewProperty2QueryKey = exports.previewProperty2 = exports.getGetSecuredProperties1QueryOptions = exports.getGetSecuredProperties1QueryKey = exports.getSecuredProperties1 = exports.getGetRecentProperties1QueryOptions = exports.getGetRecentProperties1QueryKey = exports.getRecentProperties1 = exports.getGetDraftsProperties1QueryOptions = void 0;
-exports.useSaveAlert1 = exports.getSaveAlert1MutationOptions = exports.saveAlert1 = exports.getGetByUser2QueryOptions = exports.getGetByUser2QueryKey = exports.getByUser2 = exports.getGetAlertResult1QueryOptions = exports.getGetAlertResult1QueryKey = exports.getAlertResult1 = exports.useDeleteAlert1 = exports.getDeleteAlert1MutationOptions = exports.deleteAlert1 = exports.getGetActiveFeatures1QueryOptions = exports.getGetActiveFeatures1QueryKey = exports.getActiveFeatures1 = exports.getGetQueryOptions = exports.getGetQueryKey = exports.get = exports.getGetAll1QueryOptions = exports.getGetAll1QueryKey = exports.getAll1 = exports.usePostUserSubscriptionChange1 = exports.getPostUserSubscriptionChange1MutationOptions = exports.postUserSubscriptionChange1 = exports.useCreateCheckoutSession = exports.getCreateCheckoutSessionMutationOptions = exports.createCheckoutSession = exports.useCreateCheckoutSession2 = exports.getCreateCheckoutSession2MutationOptions = exports.createCheckoutSession2 = exports.useRequestToken1 = exports.getRequestToken1MutationOptions = exports.requestToken1 = exports.getAuthorize1QueryOptions = exports.getAuthorize1QueryKey = exports.authorize1 = exports.getValidateToken1QueryOptions = exports.getValidateToken1QueryKey = exports.validateToken1 = exports.useUpdatePassword1 = exports.getUpdatePassword1MutationOptions = exports.updatePassword1 = exports.getSendEmail1QueryOptions = exports.getSendEmail1QueryKey = exports.sendEmail1 = exports.useSaveLog1 = exports.getSaveLog1MutationOptions = exports.saveLog1 = exports.useRequestTestimonialFromUser1 = exports.getRequestTestimonialFromUser1MutationOptions = void 0;
-exports.getSaveMutationOptions = exports.save = exports.getFind1QueryOptions = exports.getFind1QueryKey = exports.find1 = exports.getFindQueryOptions = exports.getFindQueryKey = exports.find = exports.useFetchRandomUsers1 = exports.getFetchRandomUsers1MutationOptions = exports.fetchRandomUsers1 = exports.useCheckPhoneVerificationCodeCommand1 = exports.getCheckPhoneVerificationCodeCommand1MutationOptions = exports.checkPhoneVerificationCodeCommand1 = exports.getActivateUser1QueryOptions = exports.getActivateUser1QueryKey = exports.activateUser1 = exports.getGetUserTypes1QueryOptions = exports.getGetUserTypes1QueryKey = exports.getUserTypes1 = exports.getRetrieveUserSkills2QueryOptions = exports.getRetrieveUserSkills2QueryKey = exports.retrieveUserSkills2 = exports.useSearchGroupUsers1 = exports.getSearchGroupUsers1MutationOptions = exports.searchGroupUsers1 = exports.useRemoveUserFavorite1 = exports.getRemoveUserFavorite1MutationOptions = exports.removeUserFavorite1 = exports.usePostUserFavorite1 = exports.getPostUserFavorite1MutationOptions = exports.postUserFavorite1 = exports.getGetByUserQueryOptions = exports.getGetByUserQueryKey = exports.getByUser = exports.getRetrieveEndorsementsByUser1QueryOptions = exports.getRetrieveEndorsementsByUser1QueryKey = exports.retrieveEndorsementsByUser1 = exports.getRetrieve1QueryOptions = exports.getRetrieve1QueryKey = exports.retrieve1 = exports.useSendAlert = exports.getSendAlertMutationOptions = exports.sendAlert = exports.getNewsletterSubscribers1QueryOptions = exports.getNewsletterSubscribers1QueryKey = exports.newsletterSubscribers1 = exports.getNewsletterAlerts1QueryOptions = exports.getNewsletterAlerts1QueryKey = exports.newsletterAlerts1 = void 0;
-exports.useEndorseUserSkill1 = exports.getEndorseUserSkill1MutationOptions = exports.endorseUserSkill1 = exports.getRetrieveSkillEndorsements1QueryOptions = exports.getRetrieveSkillEndorsements1QueryKey = exports.retrieveSkillEndorsements1 = exports.useAddUserSkills1 = exports.getAddUserSkills1MutationOptions = exports.addUserSkills1 = exports.getRetrieveUserSkillsQueryOptions = exports.getRetrieveUserSkillsQueryKey = exports.retrieveUserSkills = exports.useSendPhoneVerificationCodeCommand1 = exports.getSendPhoneVerificationCodeCommand1MutationOptions = exports.sendPhoneVerificationCodeCommand1 = exports.getSendPayedSusbscribersAlert1QueryOptions = exports.getSendPayedSusbscribersAlert1QueryKey = exports.sendPayedSusbscribersAlert1 = exports.useSearchUsers1 = exports.getSearchUsers1MutationOptions = exports.searchUsers1 = exports.useRequestActivationLink1 = exports.getRequestActivationLink1MutationOptions = exports.requestActivationLink1 = exports.useRegister1 = exports.getRegister1MutationOptions = exports.register1 = exports.getPreviewPropertyQueryOptions = exports.getPreviewPropertyQueryKey = exports.previewProperty = exports.getGetSubscribedUsers1QueryOptions = exports.getGetSubscribedUsers1QueryKey = exports.getSubscribedUsers1 = exports.getFindUserConnectionsQueryOptions = exports.getFindUserConnectionsQueryKey = exports.findUserConnections = exports.getFindList1QueryOptions = exports.getFindList1QueryKey = exports.findList1 = exports.useSave = void 0;
+exports.getGetGeoLocationsByLatLng1QueryKey = exports.getGeoLocationsByLatLng1 = exports.getFindExchangeRates1QueryOptions = exports.getFindExchangeRates1QueryKey = exports.findExchangeRates1 = exports.getGetCurrencies1QueryOptions = exports.getGetCurrencies1QueryKey = exports.getCurrencies1 = exports.getGetCountryByIp1QueryOptions = exports.getGetCountryByIp1QueryKey = exports.getCountryByIp1 = exports.getGetAllCountries2QueryOptions = exports.getGetAllCountries2QueryKey = exports.getAllCountries2 = exports.getGet2QueryOptions = exports.getGet2QueryKey = exports.get2 = exports.getRetrieveChatUserStatus1QueryOptions = exports.getRetrieveChatUserStatus1QueryKey = exports.retrieveChatUserStatus1 = exports.getRetrieveChatUser1QueryOptions = exports.getRetrieveChatUser1QueryKey = exports.retrieveChatUser1 = exports.getByUserWithResult1 = exports.sendMessage1 = exports.getGetConversation1QueryOptions = exports.getGetConversation1QueryKey = exports.getConversation1 = exports.save2 = exports.getFindUserContracts1QueryOptions = exports.getFindUserContracts1QueryKey = exports.findUserContracts1 = exports.getFindUserConnections2QueryOptions = exports.getFindUserConnections2QueryKey = exports.findUserConnections2 = exports.getRetrieveUserTicket1QueryOptions = exports.getRetrieveUserTicket1QueryKey = exports.retrieveUserTicket1 = exports.getGetChatSummaryByUser1QueryOptions = exports.getGetChatSummaryByUser1QueryKey = exports.getChatSummaryByUser1 = exports.updateChatAllowance1 = exports.getGetChatAllowance1QueryOptions = exports.getGetChatAllowance1QueryKey = exports.getChatAllowance1 = exports.updateAttachment1 = exports.getRetrieveAttachment1QueryOptions = exports.getRetrieveAttachment1QueryKey = exports.retrieveAttachment1 = exports.createAttachment1 = void 0;
+exports.getFindGroupProperties1QueryKey = exports.findGroupProperties1 = exports.getFindGroup1QueryOptions = exports.getFindGroup1QueryKey = exports.findGroup1 = exports.getFindArchivedGroupsByUser1QueryOptions = exports.getFindArchivedGroupsByUser1QueryKey = exports.findArchivedGroupsByUser1 = exports.deleteGroup1 = exports.deactivateGroup1 = exports.archiveGroup1 = exports.updateGroupMembershipStatus1 = exports.groupRequest1 = exports.groupLeave1 = exports.groupInvite = exports.groupInvite2 = exports.getGetGroupMembers1QueryOptions = exports.getGetGroupMembers1QueryKey = exports.getGroupMembers1 = exports.getUploadKyeroPropertiesQueryOptions = exports.getUploadKyeroPropertiesQueryKey = exports.uploadKyeroProperties = exports.uploadPropertiesFromUrl1 = exports.uploadProperties1 = exports.uploadKyeroPropertiesFromUrl1 = exports.uploadKyeroProperties2 = exports.getGetFormats1QueryOptions = exports.getGetFormats1QueryKey = exports.getFormats1 = exports.getXmlRedirect1QueryOptions = exports.getXmlRedirect1QueryKey = exports.xmlRedirect1 = exports.getXml1QueryOptions = exports.getXml1QueryKey = exports.xml1 = exports.triggerKyeroExport1 = exports.getTranslateText1QueryOptions = exports.getTranslateText1QueryKey = exports.translateText1 = exports.getGetLanguages1QueryOptions = exports.getGetLanguages1QueryKey = exports.getLanguages1 = exports.getFind3QueryOptions = exports.getFind3QueryKey = exports.find3 = exports.delete1 = exports.getGetAllLanguages1QueryOptions = exports.getGetAllLanguages1QueryKey = exports.getAllLanguages1 = exports.getGetGeoLocationsByLatLng1QueryOptions = void 0;
+exports.getGetRecentProperties1QueryOptions = exports.getGetRecentProperties1QueryKey = exports.getRecentProperties1 = exports.getGetDraftsProperties1QueryOptions = exports.getGetDraftsProperties1QueryKey = exports.getDraftsProperties1 = exports.getFindPropertyOldUrl1QueryOptions = exports.getFindPropertyOldUrl1QueryKey = exports.findPropertyOldUrl1 = exports.getFindProperty1QueryOptions = exports.getFindProperty1QueryKey = exports.findProperty1 = exports.getFindPropertiesByLocationRange1QueryOptions = exports.getFindPropertiesByLocationRange1QueryKey = exports.findPropertiesByLocationRange1 = exports.findProperties1 = exports.getFetchRandomPropertiesQueryOptions = exports.getFetchRandomPropertiesQueryKey = exports.fetchRandomProperties = exports.getFetchRandomProperties2QueryOptions = exports.getFetchRandomProperties2QueryKey = exports.fetchRandomProperties2 = exports.deleteProperty1 = exports.changePublicationStatus2 = exports.getGetAllPropertyProposals1QueryOptions = exports.getGetAllPropertyProposals1QueryKey = exports.getAllPropertyProposals1 = exports.getGetAllCountriesQueryOptions = exports.getGetAllCountriesQueryKey = exports.getAllCountries = exports.getGetPropertyFiltersQueryOptions = exports.getGetPropertyFiltersQueryKey = exports.getPropertyFilters = exports.getPropertyFieldOptions1 = exports.getPropertyFilters2 = exports.getFindRequestedGroupsByUser1QueryOptions = exports.getFindRequestedGroupsByUser1QueryKey = exports.findRequestedGroupsByUser1 = exports.getFindInvitedGroupsByUser1QueryOptions = exports.getFindInvitedGroupsByUser1QueryKey = exports.findInvitedGroupsByUser1 = exports.getFindInactiveGroupsByUser1QueryOptions = exports.getFindInactiveGroupsByUser1QueryKey = exports.findInactiveGroupsByUser1 = exports.saveGroup1 = exports.getFindGroupsByUser1QueryOptions = exports.getFindGroupsByUser1QueryKey = exports.findGroupsByUser1 = exports.findGroupPropertiesSearch1 = exports.getFindGroupProperties1QueryOptions = void 0;
+exports.createCheckoutSession = exports.createCheckoutSession2 = exports.requestToken1 = exports.getAuthorize1QueryOptions = exports.getAuthorize1QueryKey = exports.authorize1 = exports.getValidateToken1QueryOptions = exports.getValidateToken1QueryKey = exports.validateToken1 = exports.updatePassword1 = exports.getSendEmail1QueryOptions = exports.getSendEmail1QueryKey = exports.sendEmail1 = exports.saveLog1 = exports.requestTestimonialFromUser1 = exports.getFindTestimonialsByUser1QueryOptions = exports.getFindTestimonialsByUser1QueryKey = exports.findTestimonialsByUser1 = exports.getFindPropertiesByUser1QueryOptions = exports.getFindPropertiesByUser1QueryKey = exports.findPropertiesByUser1 = exports.getFindTestimonialRequestsReceived1QueryOptions = exports.getFindTestimonialRequestsReceived1QueryKey = exports.findTestimonialRequestsReceived1 = exports.getFindTestimonialRequests1QueryOptions = exports.getFindTestimonialRequests1QueryKey = exports.findTestimonialRequests1 = exports.getFindTestimonial1QueryOptions = exports.getFindTestimonial1QueryKey = exports.findTestimonial1 = exports.saveTestimonial1 = exports.getFetchReceivedTestimonials1QueryOptions = exports.getFetchReceivedTestimonials1QueryKey = exports.fetchReceivedTestimonials1 = exports.getFetchPublishedTestimonials1QueryOptions = exports.getFetchPublishedTestimonials1QueryKey = exports.fetchPublishedTestimonials1 = exports.changePublicationStatus = exports.getGetAllPropertyTypes1QueryOptions = exports.getGetAllPropertyTypes1QueryKey = exports.getAllPropertyTypes1 = exports.sendGroupAlert1 = exports.sendAlert2 = exports.saveProperty1 = exports.getPreviewProperty2QueryOptions = exports.getPreviewProperty2QueryKey = exports.previewProperty2 = exports.getGetSecuredProperties1QueryOptions = exports.getGetSecuredProperties1QueryKey = exports.getSecuredProperties1 = void 0;
+exports.getFindQueryKey = exports.find = exports.fetchRandomUsers1 = exports.checkPhoneVerificationCodeCommand1 = exports.getActivateUser1QueryOptions = exports.getActivateUser1QueryKey = exports.activateUser1 = exports.getGetUserTypes1QueryOptions = exports.getGetUserTypes1QueryKey = exports.getUserTypes1 = exports.getRetrieveUserSkills2QueryOptions = exports.getRetrieveUserSkills2QueryKey = exports.retrieveUserSkills2 = exports.searchGroupUsers1 = exports.removeUserFavorite1 = exports.postUserFavorite1 = exports.getGetByUserQueryOptions = exports.getGetByUserQueryKey = exports.getByUser = exports.getRetrieveEndorsementsByUser1QueryOptions = exports.getRetrieveEndorsementsByUser1QueryKey = exports.retrieveEndorsementsByUser1 = exports.getRetrieve1QueryOptions = exports.getRetrieve1QueryKey = exports.retrieve1 = exports.sendAlert = exports.getNewsletterSubscribers1QueryOptions = exports.getNewsletterSubscribers1QueryKey = exports.newsletterSubscribers1 = exports.getNewsletterAlerts1QueryOptions = exports.getNewsletterAlerts1QueryKey = exports.newsletterAlerts1 = exports.saveAlert1 = exports.getGetByUser2QueryOptions = exports.getGetByUser2QueryKey = exports.getByUser2 = exports.getGetAlertResult1QueryOptions = exports.getGetAlertResult1QueryKey = exports.getAlertResult1 = exports.deleteAlert1 = exports.getGetActiveFeatures1QueryOptions = exports.getGetActiveFeatures1QueryKey = exports.getActiveFeatures1 = exports.getGetQueryOptions = exports.getGetQueryKey = exports.get = exports.getGetAll1QueryOptions = exports.getGetAll1QueryKey = exports.getAll1 = exports.postUserSubscriptionChange1 = void 0;
+exports.endorseUserSkill1 = exports.getRetrieveSkillEndorsements1QueryOptions = exports.getRetrieveSkillEndorsements1QueryKey = exports.retrieveSkillEndorsements1 = exports.addUserSkills1 = exports.getRetrieveUserSkillsQueryOptions = exports.getRetrieveUserSkillsQueryKey = exports.retrieveUserSkills = exports.sendPhoneVerificationCodeCommand1 = exports.getSendPayedSusbscribersAlert1QueryOptions = exports.getSendPayedSusbscribersAlert1QueryKey = exports.sendPayedSusbscribersAlert1 = exports.searchUsers1 = exports.requestActivationLink1 = exports.register1 = exports.getPreviewPropertyQueryOptions = exports.getPreviewPropertyQueryKey = exports.previewProperty = exports.getGetSubscribedUsers1QueryOptions = exports.getGetSubscribedUsers1QueryKey = exports.getSubscribedUsers1 = exports.getFindUserConnectionsQueryOptions = exports.getFindUserConnectionsQueryKey = exports.findUserConnections = exports.getFindList1QueryOptions = exports.getFindList1QueryKey = exports.findList1 = exports.save = exports.getFind1QueryOptions = exports.getFind1QueryKey = exports.find1 = exports.getFindQueryOptions = void 0;
 exports.useRetrieveAttachment1 = useRetrieveAttachment1;
 exports.useGetChatAllowance1 = useGetChatAllowance1;
 exports.useGetChatSummaryByUser1 = useGetChatSummaryByUser1;
@@ -106,30 +104,6 @@ const createAttachment1 = (attachment, signal) => {
     });
 };
 exports.createAttachment1 = createAttachment1;
-const getCreateAttachment1MutationOptions = (options) => {
-    const mutationKey = ["createAttachment1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.createAttachment1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getCreateAttachment1MutationOptions = getCreateAttachment1MutationOptions;
-/**
- * @summary Post a attachment request
- */
-const useCreateAttachment1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getCreateAttachment1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useCreateAttachment1 = useCreateAttachment1;
 /**
  * @summary Get details to download a file
  */
@@ -179,30 +153,6 @@ const updateAttachment1 = (fileId, notifyUploadRequest, signal) => {
     });
 };
 exports.updateAttachment1 = updateAttachment1;
-const getUpdateAttachment1MutationOptions = (options) => {
-    const mutationKey = ["updateAttachment1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { fileId, data } = props ?? {};
-        return (0, exports.updateAttachment1)(fileId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getUpdateAttachment1MutationOptions = getUpdateAttachment1MutationOptions;
-/**
- * @summary Notify a new file has been loaded in S3
- */
-const useUpdateAttachment1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getUpdateAttachment1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useUpdateAttachment1 = useUpdateAttachment1;
 /**
  * Retrieves the chat allowance settings between two users. User must be one of the involved parties.
  * @summary Get chat allowance for a user pair
@@ -253,30 +203,6 @@ const updateChatAllowance1 = (userPair, chatAllowance) => {
     });
 };
 exports.updateChatAllowance1 = updateChatAllowance1;
-const getUpdateChatAllowance1MutationOptions = (options) => {
-    const mutationKey = ["updateChatAllowance1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { userPair, data } = props ?? {};
-        return (0, exports.updateChatAllowance1)(userPair, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getUpdateChatAllowance1MutationOptions = getUpdateChatAllowance1MutationOptions;
-/**
- * @summary Update chat allowance for a user pair
- */
-const useUpdateChatAllowance1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getUpdateChatAllowance1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useUpdateChatAllowance1 = useUpdateChatAllowance1;
 /**
  * Retrieves summaries of all chat conversations for a user
  * @summary Get the user chat summaries
@@ -427,30 +353,6 @@ const save2 = (contract, signal) => {
     });
 };
 exports.save2 = save2;
-const getSave2MutationOptions = (options) => {
-    const mutationKey = ["save2"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.save2)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSave2MutationOptions = getSave2MutationOptions;
-/**
- * @summary Save a user Contract
- */
-const useSave2 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSave2MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSave2 = useSave2;
 /**
  * @summary Get a message by conversation
  */
@@ -496,30 +398,6 @@ const sendMessage1 = (message, signal) => {
     });
 };
 exports.sendMessage1 = sendMessage1;
-const getSendMessage1MutationOptions = (options) => {
-    const mutationKey = ["sendMessage1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.sendMessage1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSendMessage1MutationOptions = getSendMessage1MutationOptions;
-/**
- * @summary Post a message
- */
-const useSendMessage1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSendMessage1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSendMessage1 = useSendMessage1;
 /**
  * Retrieves notifications for a specific user and notification type. Designed for autopilot integration.
  * @summary Get user notifications by type
@@ -535,30 +413,6 @@ const getByUserWithResult1 = (type, autopilotUser, params, signal) => {
     });
 };
 exports.getByUserWithResult1 = getByUserWithResult1;
-const getGetByUserWithResult1MutationOptions = (options) => {
-    const mutationKey = ["getByUserWithResult1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { type, data, params } = props ?? {};
-        return (0, exports.getByUserWithResult1)(type, data, params);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getGetByUserWithResult1MutationOptions = getGetByUserWithResult1MutationOptions;
-/**
- * @summary Get user notifications by type
- */
-const useGetByUserWithResult1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getGetByUserWithResult1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useGetByUserWithResult1 = useGetByUserWithResult1;
 /**
  * @summary Retrieve a user chat
  */
@@ -864,30 +718,6 @@ const delete1 = (pnemonic) => {
     });
 };
 exports.delete1 = delete1;
-const getDelete1MutationOptions = (options) => {
-    const mutationKey = ["delete1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { pnemonic } = props ?? {};
-        return (0, exports.delete1)(pnemonic);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getDelete1MutationOptions = getDelete1MutationOptions;
-/**
- * @summary Delete a locale entry with all translations related
- */
-const useDelete1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getDelete1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useDelete1 = useDelete1;
 /**
  * Retrieves the complete list of available locales in the system
  * @summary Returns all language list locale entries
@@ -998,29 +828,6 @@ const triggerKyeroExport1 = (signal) => {
     });
 };
 exports.triggerKyeroExport1 = triggerKyeroExport1;
-const getTriggerKyeroExport1MutationOptions = (options) => {
-    const mutationKey = ["triggerKyeroExport1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = () => {
-        return (0, exports.triggerKyeroExport1)();
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getTriggerKyeroExport1MutationOptions = getTriggerKyeroExport1MutationOptions;
-/**
- * @summary Manually trigger Kyero exports to S3
- */
-const useTriggerKyeroExport1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getTriggerKyeroExport1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useTriggerKyeroExport1 = useTriggerKyeroExport1;
 /**
  * Generates and returns property data in XML format for a specific user and format type.
  * @summary Get property XML for specific user
@@ -1145,30 +952,6 @@ const uploadKyeroProperties2 = (uploadKyeroProperties2Body, signal) => {
     });
 };
 exports.uploadKyeroProperties2 = uploadKyeroProperties2;
-const getUploadKyeroProperties2MutationOptions = (options) => {
-    const mutationKey = ["uploadKyeroProperties2"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.uploadKyeroProperties2)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getUploadKyeroProperties2MutationOptions = getUploadKyeroProperties2MutationOptions;
-/**
- * @summary Upload Kyero properties with XML in request body
- */
-const useUploadKyeroProperties2 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getUploadKyeroProperties2MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useUploadKyeroProperties2 = useUploadKyeroProperties2;
 /**
  * Upload properties in Kyero format by providing a URL to an XML file
  * @summary Upload Kyero properties from URL
@@ -1183,30 +966,6 @@ const uploadKyeroPropertiesFromUrl1 = (xmlUrl, signal) => {
     });
 };
 exports.uploadKyeroPropertiesFromUrl1 = uploadKyeroPropertiesFromUrl1;
-const getUploadKyeroPropertiesFromUrl1MutationOptions = (options) => {
-    const mutationKey = ["uploadKyeroPropertiesFromUrl1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.uploadKyeroPropertiesFromUrl1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getUploadKyeroPropertiesFromUrl1MutationOptions = getUploadKyeroPropertiesFromUrl1MutationOptions;
-/**
- * @summary Upload Kyero properties from URL
- */
-const useUploadKyeroPropertiesFromUrl1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getUploadKyeroPropertiesFromUrl1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useUploadKyeroPropertiesFromUrl1 = useUploadKyeroPropertiesFromUrl1;
 /**
  * Upload properties with XML content in the request body using the specified format
  * @summary Upload properties in specified format with XML in request body
@@ -1221,30 +980,6 @@ const uploadProperties1 = (format, uploadProperties1Body, signal) => {
     });
 };
 exports.uploadProperties1 = uploadProperties1;
-const getUploadProperties1MutationOptions = (options) => {
-    const mutationKey = ["uploadProperties1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { format, data } = props ?? {};
-        return (0, exports.uploadProperties1)(format, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getUploadProperties1MutationOptions = getUploadProperties1MutationOptions;
-/**
- * @summary Upload properties in specified format with XML in request body
- */
-const useUploadProperties1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getUploadProperties1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useUploadProperties1 = useUploadProperties1;
 /**
  * Upload properties in the specified format by providing a URL to an XML file
  * @summary Upload properties in specified format from URL
@@ -1259,30 +994,6 @@ const uploadPropertiesFromUrl1 = (format, xmlUrl, signal) => {
     });
 };
 exports.uploadPropertiesFromUrl1 = uploadPropertiesFromUrl1;
-const getUploadPropertiesFromUrl1MutationOptions = (options) => {
-    const mutationKey = ["uploadPropertiesFromUrl1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { format, data } = props ?? {};
-        return (0, exports.uploadPropertiesFromUrl1)(format, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getUploadPropertiesFromUrl1MutationOptions = getUploadPropertiesFromUrl1MutationOptions;
-/**
- * @summary Upload properties in specified format from URL
- */
-const useUploadPropertiesFromUrl1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getUploadPropertiesFromUrl1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useUploadPropertiesFromUrl1 = useUploadPropertiesFromUrl1;
 /**
  * Exports property data to Facebook Marketplace format within the specified date range
  * @summary Export properties to Facebook Marketplace
@@ -1365,30 +1076,6 @@ const groupInvite2 = (groupId, signal) => {
     });
 };
 exports.groupInvite2 = groupInvite2;
-const getGroupInvite2MutationOptions = (options) => {
-    const mutationKey = ["groupInvite2"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { groupId } = props ?? {};
-        return (0, exports.groupInvite2)(groupId);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getGroupInvite2MutationOptions = getGroupInvite2MutationOptions;
-/**
- * @summary Accept Group Invitation
- */
-const useGroupInvite2 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getGroupInvite2MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useGroupInvite2 = useGroupInvite2;
 /**
  * @summary Request Invitation to Group
  */
@@ -1401,30 +1088,6 @@ const groupInvite = (groupId, params, signal) => {
     });
 };
 exports.groupInvite = groupInvite;
-const getGroupInviteMutationOptions = (options) => {
-    const mutationKey = ["groupInvite"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { groupId, params } = props ?? {};
-        return (0, exports.groupInvite)(groupId, params);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getGroupInviteMutationOptions = getGroupInviteMutationOptions;
-/**
- * @summary Request Invitation to Group
- */
-const useGroupInvite = (options, queryClient) => {
-    const mutationOptions = (0, exports.getGroupInviteMutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useGroupInvite = useGroupInvite;
 /**
  * @summary Leave Group
  */
@@ -1436,30 +1099,6 @@ const groupLeave1 = (groupId, signal) => {
     });
 };
 exports.groupLeave1 = groupLeave1;
-const getGroupLeave1MutationOptions = (options) => {
-    const mutationKey = ["groupLeave1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { groupId } = props ?? {};
-        return (0, exports.groupLeave1)(groupId);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getGroupLeave1MutationOptions = getGroupLeave1MutationOptions;
-/**
- * @summary Leave Group
- */
-const useGroupLeave1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getGroupLeave1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useGroupLeave1 = useGroupLeave1;
 /**
  * @summary Request Admission to Group
  */
@@ -1471,30 +1110,6 @@ const groupRequest1 = (groupId, signal) => {
     });
 };
 exports.groupRequest1 = groupRequest1;
-const getGroupRequest1MutationOptions = (options) => {
-    const mutationKey = ["groupRequest1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { groupId } = props ?? {};
-        return (0, exports.groupRequest1)(groupId);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getGroupRequest1MutationOptions = getGroupRequest1MutationOptions;
-/**
- * @summary Request Admission to Group
- */
-const useGroupRequest1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getGroupRequest1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useGroupRequest1 = useGroupRequest1;
 /**
  * Acceptable Status values are:  ACCEPTED, REJECTED, REMOVED
  * @summary Update the group member status from groupId supplied
@@ -1508,30 +1123,6 @@ const updateGroupMembershipStatus1 = (groupId, params, signal) => {
     });
 };
 exports.updateGroupMembershipStatus1 = updateGroupMembershipStatus1;
-const getUpdateGroupMembershipStatus1MutationOptions = (options) => {
-    const mutationKey = ["updateGroupMembershipStatus1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { groupId, params } = props ?? {};
-        return (0, exports.updateGroupMembershipStatus1)(groupId, params);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getUpdateGroupMembershipStatus1MutationOptions = getUpdateGroupMembershipStatus1MutationOptions;
-/**
- * @summary Update the group member status from groupId supplied
- */
-const useUpdateGroupMembershipStatus1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getUpdateGroupMembershipStatus1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useUpdateGroupMembershipStatus1 = useUpdateGroupMembershipStatus1;
 /**
  * This process is reversible
  * @summary Archive the group with id supplied
@@ -1544,30 +1135,6 @@ const archiveGroup1 = (id, signal) => {
     });
 };
 exports.archiveGroup1 = archiveGroup1;
-const getArchiveGroup1MutationOptions = (options) => {
-    const mutationKey = ["archiveGroup1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { id } = props ?? {};
-        return (0, exports.archiveGroup1)(id);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getArchiveGroup1MutationOptions = getArchiveGroup1MutationOptions;
-/**
- * @summary Archive the group with id supplied
- */
-const useArchiveGroup1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getArchiveGroup1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useArchiveGroup1 = useArchiveGroup1;
 /**
  * This process is reversible
  * @summary Deactivate the group with id supplied
@@ -1580,30 +1147,6 @@ const deactivateGroup1 = (id, signal) => {
     });
 };
 exports.deactivateGroup1 = deactivateGroup1;
-const getDeactivateGroup1MutationOptions = (options) => {
-    const mutationKey = ["deactivateGroup1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { id } = props ?? {};
-        return (0, exports.deactivateGroup1)(id);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getDeactivateGroup1MutationOptions = getDeactivateGroup1MutationOptions;
-/**
- * @summary Deactivate the group with id supplied
- */
-const useDeactivateGroup1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getDeactivateGroup1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useDeactivateGroup1 = useDeactivateGroup1;
 /**
  * This process is not reversible
  * @summary Delete the group with id supplied
@@ -1612,30 +1155,6 @@ const deleteGroup1 = (id) => {
     return (0, custom_instance_1.customInstance)({ url: `/groups/${id}`, method: "DELETE" });
 };
 exports.deleteGroup1 = deleteGroup1;
-const getDeleteGroup1MutationOptions = (options) => {
-    const mutationKey = ["deleteGroup1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { id } = props ?? {};
-        return (0, exports.deleteGroup1)(id);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getDeleteGroup1MutationOptions = getDeleteGroup1MutationOptions;
-/**
- * @summary Delete the group with id supplied
- */
-const useDeleteGroup1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getDeleteGroup1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useDeleteGroup1 = useDeleteGroup1;
 /**
  * @summary Return the groups list with specified user id that user has archived
  */
@@ -1756,30 +1275,6 @@ const findGroupPropertiesSearch1 = (groupId, propertyFilterCriteria, signal) => 
     });
 };
 exports.findGroupPropertiesSearch1 = findGroupPropertiesSearch1;
-const getFindGroupPropertiesSearch1MutationOptions = (options) => {
-    const mutationKey = ["findGroupPropertiesSearch1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { groupId, data } = props ?? {};
-        return (0, exports.findGroupPropertiesSearch1)(groupId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getFindGroupPropertiesSearch1MutationOptions = getFindGroupPropertiesSearch1MutationOptions;
-/**
- * @summary Return the group with specified id
- */
-const useFindGroupPropertiesSearch1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getFindGroupPropertiesSearch1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useFindGroupPropertiesSearch1 = useFindGroupPropertiesSearch1;
 /**
  * This will return both owned Groups and Groups the user is a member of
  * @summary Return the groups list with specified user id
@@ -1827,30 +1322,6 @@ const saveGroup1 = (group, signal) => {
     });
 };
 exports.saveGroup1 = saveGroup1;
-const getSaveGroup1MutationOptions = (options) => {
-    const mutationKey = ["saveGroup1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.saveGroup1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSaveGroup1MutationOptions = getSaveGroup1MutationOptions;
-/**
- * @summary Create or update the group supplied
- */
-const useSaveGroup1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSaveGroup1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSaveGroup1 = useSaveGroup1;
 /**
  * @summary Return the groups list with specified user id that are inactive
  */
@@ -1961,30 +1432,6 @@ const getPropertyFilters2 = (propertyKey, signal) => {
     });
 };
 exports.getPropertyFilters2 = getPropertyFilters2;
-const getGetPropertyFilters2MutationOptions = (options) => {
-    const mutationKey = ["getPropertyFilters2"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.getPropertyFilters2)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getGetPropertyFilters2MutationOptions = getGetPropertyFilters2MutationOptions;
-/**
- * @summary Retrieves property fields filtered by key
- */
-const useGetPropertyFilters2 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getGetPropertyFilters2MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useGetPropertyFilters2 = useGetPropertyFilters2;
 /**
  * Retrieves options for a specific property filter based on submitted filters
  * @summary Get property field options
@@ -1999,30 +1446,6 @@ const getPropertyFieldOptions1 = (filterId, propertyFilterSubmission, signal) =>
     });
 };
 exports.getPropertyFieldOptions1 = getPropertyFieldOptions1;
-const getGetPropertyFieldOptions1MutationOptions = (options) => {
-    const mutationKey = ["getPropertyFieldOptions1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { filterId, data } = props ?? {};
-        return (0, exports.getPropertyFieldOptions1)(filterId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getGetPropertyFieldOptions1MutationOptions = getGetPropertyFieldOptions1MutationOptions;
-/**
- * @summary Get property field options
- */
-const useGetPropertyFieldOptions1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getGetPropertyFieldOptions1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useGetPropertyFieldOptions1 = useGetPropertyFieldOptions1;
 /**
  * Retrieves a list of property filters, optionally filtered by filter nature IDs
  * @summary Get property filters
@@ -2132,30 +1555,6 @@ const changePublicationStatus2 = (propertyId, changePublicationStatus2Body, sign
     });
 };
 exports.changePublicationStatus2 = changePublicationStatus2;
-const getChangePublicationStatus2MutationOptions = (options) => {
-    const mutationKey = ["changePublicationStatus2"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { propertyId, data } = props ?? {};
-        return (0, exports.changePublicationStatus2)(propertyId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getChangePublicationStatus2MutationOptions = getChangePublicationStatus2MutationOptions;
-/**
- * @summary Publication state update
- */
-const useChangePublicationStatus2 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getChangePublicationStatus2MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useChangePublicationStatus2 = useChangePublicationStatus2;
 /**
  * This process is not reversible
  * @summary Delete the property with id supplied
@@ -2164,30 +1563,6 @@ const deleteProperty1 = (id) => {
     return (0, custom_instance_1.customInstance)({ url: `/properties/${id}`, method: "DELETE" });
 };
 exports.deleteProperty1 = deleteProperty1;
-const getDeleteProperty1MutationOptions = (options) => {
-    const mutationKey = ["deleteProperty1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { id } = props ?? {};
-        return (0, exports.deleteProperty1)(id);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getDeleteProperty1MutationOptions = getDeleteProperty1MutationOptions;
-/**
- * @summary Delete the property with id supplied
- */
-const useDeleteProperty1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getDeleteProperty1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useDeleteProperty1 = useDeleteProperty1;
 /**
  * Returns a randomized list of properties with the specified count limit
  * @summary Fetch random list of properties, with basic data
@@ -2269,30 +1644,6 @@ const findProperties1 = (propertyFilterCriteria, signal) => {
     });
 };
 exports.findProperties1 = findProperties1;
-const getFindProperties1MutationOptions = (options) => {
-    const mutationKey = ["findProperties1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.findProperties1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getFindProperties1MutationOptions = getFindProperties1MutationOptions;
-/**
- * @summary Search properties with specified filters
- */
-const useFindProperties1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getFindProperties1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useFindProperties1 = useFindProperties1;
 /**
  * @deprecated
  * @summary Return the property list with specified user id
@@ -2547,30 +1898,6 @@ const saveProperty1 = (property, signal) => {
     });
 };
 exports.saveProperty1 = saveProperty1;
-const getSaveProperty1MutationOptions = (options) => {
-    const mutationKey = ["saveProperty1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.saveProperty1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSaveProperty1MutationOptions = getSaveProperty1MutationOptions;
-/**
- * @summary Create or update the property supplied
- */
-const useSaveProperty1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSaveProperty1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSaveProperty1 = useSaveProperty1;
 const sendAlert2 = (weeklyAlertRange, signal) => {
     return (0, custom_instance_1.customInstance)({
         url: `/properties/weekly-alert`,
@@ -2581,27 +1908,6 @@ const sendAlert2 = (weeklyAlertRange, signal) => {
     });
 };
 exports.sendAlert2 = sendAlert2;
-const getSendAlert2MutationOptions = (options) => {
-    const mutationKey = ["sendAlert2"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.sendAlert2)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSendAlert2MutationOptions = getSendAlert2MutationOptions;
-const useSendAlert2 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSendAlert2MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSendAlert2 = useSendAlert2;
 const sendGroupAlert1 = (signal) => {
     return (0, custom_instance_1.customInstance)({
         url: `/properties/weekly-group-alert`,
@@ -2610,26 +1916,6 @@ const sendGroupAlert1 = (signal) => {
     });
 };
 exports.sendGroupAlert1 = sendGroupAlert1;
-const getSendGroupAlert1MutationOptions = (options) => {
-    const mutationKey = ["sendGroupAlert1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = () => {
-        return (0, exports.sendGroupAlert1)();
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSendGroupAlert1MutationOptions = getSendGroupAlert1MutationOptions;
-const useSendGroupAlert1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSendGroupAlert1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSendGroupAlert1 = useSendGroupAlert1;
 /**
  * Retrieves a list of all property types available in the system, including their IDs, names, language keys, active status, and associated property type groups.
  * @summary Get all property types
@@ -2673,30 +1959,6 @@ const changePublicationStatus = (testimonialId, publicationState, signal) => {
     });
 };
 exports.changePublicationStatus = changePublicationStatus;
-const getChangePublicationStatusMutationOptions = (options) => {
-    const mutationKey = ["changePublicationStatus"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { testimonialId, publicationState } = props ?? {};
-        return (0, exports.changePublicationStatus)(testimonialId, publicationState);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getChangePublicationStatusMutationOptions = getChangePublicationStatusMutationOptions;
-/**
- * @summary Publication state update
- */
-const useChangePublicationStatus = (options, queryClient) => {
-    const mutationOptions = (0, exports.getChangePublicationStatusMutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useChangePublicationStatus = useChangePublicationStatus;
 /**
  * @summary Fetch User Posted list of testimonials
  */
@@ -2775,30 +2037,6 @@ const saveTestimonial1 = (testimonial, signal) => {
     });
 };
 exports.saveTestimonial1 = saveTestimonial1;
-const getSaveTestimonial1MutationOptions = (options) => {
-    const mutationKey = ["saveTestimonial1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.saveTestimonial1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSaveTestimonial1MutationOptions = getSaveTestimonial1MutationOptions;
-/**
- * @summary Create or update the Testimonial supplied
- */
-const useSaveTestimonial1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSaveTestimonial1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSaveTestimonial1 = useSaveTestimonial1;
 /**
  * @summary Return the testimonial with specified id, it needs to be published
  */
@@ -2982,30 +2220,6 @@ const requestTestimonialFromUser1 = (id, signal) => {
     });
 };
 exports.requestTestimonialFromUser1 = requestTestimonialFromUser1;
-const getRequestTestimonialFromUser1MutationOptions = (options) => {
-    const mutationKey = ["requestTestimonialFromUser1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { id } = props ?? {};
-        return (0, exports.requestTestimonialFromUser1)(id);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getRequestTestimonialFromUser1MutationOptions = getRequestTestimonialFromUser1MutationOptions;
-/**
- * @summary Request testimonial from specified user id
- */
-const useRequestTestimonialFromUser1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getRequestTestimonialFromUser1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useRequestTestimonialFromUser1 = useRequestTestimonialFromUser1;
 const saveLog1 = (logEntry, signal) => {
     return (0, custom_instance_1.customInstance)({
         url: `/log`,
@@ -3016,27 +2230,6 @@ const saveLog1 = (logEntry, signal) => {
     });
 };
 exports.saveLog1 = saveLog1;
-const getSaveLog1MutationOptions = (options) => {
-    const mutationKey = ["saveLog1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.saveLog1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSaveLog1MutationOptions = getSaveLog1MutationOptions;
-const useSaveLog1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSaveLog1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSaveLog1 = useSaveLog1;
 /**
  * In this email it will be contained all process information to change password and recover access
  * @summary Send an email to user that has forgotted his/her password
@@ -3082,30 +2275,6 @@ const updatePassword1 = (passwordRecoveryRequest, signal) => {
     });
 };
 exports.updatePassword1 = updatePassword1;
-const getUpdatePassword1MutationOptions = (options) => {
-    const mutationKey = ["updatePassword1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.updatePassword1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getUpdatePassword1MutationOptions = getUpdatePassword1MutationOptions;
-/**
- * @summary Update the password user, finishing the recovery password process
- */
-const useUpdatePassword1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getUpdatePassword1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useUpdatePassword1 = useUpdatePassword1;
 /**
  * @summary Validate that password recovery token supplied was valid and current
  */
@@ -3194,30 +2363,6 @@ const requestToken1 = (requestToken1Body, signal) => {
     });
 };
 exports.requestToken1 = requestToken1;
-const getRequestToken1MutationOptions = (options) => {
-    const mutationKey = ["requestToken1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.requestToken1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getRequestToken1MutationOptions = getRequestToken1MutationOptions;
-/**
- * @summary Exchange authorization code for access token
- */
-const useRequestToken1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getRequestToken1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useRequestToken1 = useRequestToken1;
 /**
  * @summary Create checkout-session
  */
@@ -3231,30 +2376,6 @@ const createCheckoutSession2 = (checkoutSessionDto, signal) => {
     });
 };
 exports.createCheckoutSession2 = createCheckoutSession2;
-const getCreateCheckoutSession2MutationOptions = (options) => {
-    const mutationKey = ["createCheckoutSession2"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.createCheckoutSession2)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getCreateCheckoutSession2MutationOptions = getCreateCheckoutSession2MutationOptions;
-/**
- * @summary Create checkout-session
- */
-const useCreateCheckoutSession2 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getCreateCheckoutSession2MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useCreateCheckoutSession2 = useCreateCheckoutSession2;
 /**
  * @summary Create checkout-session
  */
@@ -3268,30 +2389,6 @@ const createCheckoutSession = (customerSessionDto, signal) => {
     });
 };
 exports.createCheckoutSession = createCheckoutSession;
-const getCreateCheckoutSessionMutationOptions = (options) => {
-    const mutationKey = ["createCheckoutSession"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.createCheckoutSession)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getCreateCheckoutSessionMutationOptions = getCreateCheckoutSessionMutationOptions;
-/**
- * @summary Create checkout-session
- */
-const useCreateCheckoutSession = (options, queryClient) => {
-    const mutationOptions = (0, exports.getCreateCheckoutSessionMutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useCreateCheckoutSession = useCreateCheckoutSession;
 /**
  * @summary Notify user subscription change
  */
@@ -3305,30 +2402,6 @@ const postUserSubscriptionChange1 = (stripeEvent, signal) => {
     });
 };
 exports.postUserSubscriptionChange1 = postUserSubscriptionChange1;
-const getPostUserSubscriptionChange1MutationOptions = (options) => {
-    const mutationKey = ["postUserSubscriptionChange1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.postUserSubscriptionChange1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getPostUserSubscriptionChange1MutationOptions = getPostUserSubscriptionChange1MutationOptions;
-/**
- * @summary Notify user subscription change
- */
-const usePostUserSubscriptionChange1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getPostUserSubscriptionChange1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.usePostUserSubscriptionChange1 = usePostUserSubscriptionChange1;
 /**
  * @summary Return the active and available subscription plans
  */
@@ -3432,30 +2505,6 @@ const deleteAlert1 = (userId, alertId) => {
     });
 };
 exports.deleteAlert1 = deleteAlert1;
-const getDeleteAlert1MutationOptions = (options) => {
-    const mutationKey = ["deleteAlert1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { userId, alertId } = props ?? {};
-        return (0, exports.deleteAlert1)(userId, alertId);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getDeleteAlert1MutationOptions = getDeleteAlert1MutationOptions;
-/**
- * @summary Delete an alert
- */
-const useDeleteAlert1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getDeleteAlert1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useDeleteAlert1 = useDeleteAlert1;
 /**
  * Retrieves the results for a specific alert
  * @summary Get alert results
@@ -3544,30 +2593,6 @@ const saveAlert1 = (userId, alert, signal) => {
     });
 };
 exports.saveAlert1 = saveAlert1;
-const getSaveAlert1MutationOptions = (options) => {
-    const mutationKey = ["saveAlert1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { userId, data } = props ?? {};
-        return (0, exports.saveAlert1)(userId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSaveAlert1MutationOptions = getSaveAlert1MutationOptions;
-/**
- * @summary Create a new alert
- */
-const useSaveAlert1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSaveAlert1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSaveAlert1 = useSaveAlert1;
 /**
  * Retrieves all newsletters that the specified user has subscribed to
  * @summary Get newsletters subscribed to
@@ -3654,30 +2679,6 @@ const sendAlert = (userId, signal) => {
     });
 };
 exports.sendAlert = sendAlert;
-const getSendAlertMutationOptions = (options) => {
-    const mutationKey = ["sendAlert"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { userId } = props ?? {};
-        return (0, exports.sendAlert)(userId);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSendAlertMutationOptions = getSendAlertMutationOptions;
-/**
- * @summary Send customized property alerts
- */
-const useSendAlert = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSendAlertMutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSendAlert = useSendAlert;
 /**
  * Returns a list of all available brokerages in the system
  * @summary Retrieve all brokerages
@@ -3804,30 +2805,6 @@ const postUserFavorite1 = (userId, favorite, signal) => {
     });
 };
 exports.postUserFavorite1 = postUserFavorite1;
-const getPostUserFavorite1MutationOptions = (options) => {
-    const mutationKey = ["postUserFavorite1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { userId, data } = props ?? {};
-        return (0, exports.postUserFavorite1)(userId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getPostUserFavorite1MutationOptions = getPostUserFavorite1MutationOptions;
-/**
- * @summary Add a favorite
- */
-const usePostUserFavorite1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getPostUserFavorite1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.usePostUserFavorite1 = usePostUserFavorite1;
 /**
  * Removes a specific favorite from a user's favorites list
  * @summary Remove a favorite
@@ -3839,30 +2816,6 @@ const removeUserFavorite1 = (userId, favoriteId) => {
     });
 };
 exports.removeUserFavorite1 = removeUserFavorite1;
-const getRemoveUserFavorite1MutationOptions = (options) => {
-    const mutationKey = ["removeUserFavorite1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { userId, favoriteId } = props ?? {};
-        return (0, exports.removeUserFavorite1)(userId, favoriteId);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getRemoveUserFavorite1MutationOptions = getRemoveUserFavorite1MutationOptions;
-/**
- * @summary Remove a favorite
- */
-const useRemoveUserFavorite1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getRemoveUserFavorite1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useRemoveUserFavorite1 = useRemoveUserFavorite1;
 /**
  * Searches for users within a specific group matching the specified filter criteria
  * @summary Search users within a specified group
@@ -3877,30 +2830,6 @@ const searchGroupUsers1 = (groupId, userFilterRequest, signal) => {
     });
 };
 exports.searchGroupUsers1 = searchGroupUsers1;
-const getSearchGroupUsers1MutationOptions = (options) => {
-    const mutationKey = ["searchGroupUsers1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { groupId, data } = props ?? {};
-        return (0, exports.searchGroupUsers1)(groupId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSearchGroupUsers1MutationOptions = getSearchGroupUsers1MutationOptions;
-/**
- * @summary Search users within a specified group
- */
-const useSearchGroupUsers1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSearchGroupUsers1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSearchGroupUsers1 = useSearchGroupUsers1;
 /**
  * Returns a list of all available user skills in the system
  * @summary Retrieve all user skills
@@ -4007,30 +2936,6 @@ const checkPhoneVerificationCodeCommand1 = (userId, phoneCodeCheckResource, sign
     });
 };
 exports.checkPhoneVerificationCodeCommand1 = checkPhoneVerificationCodeCommand1;
-const getCheckPhoneVerificationCodeCommand1MutationOptions = (options) => {
-    const mutationKey = ["checkPhoneVerificationCodeCommand1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { userId, data } = props ?? {};
-        return (0, exports.checkPhoneVerificationCodeCommand1)(userId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getCheckPhoneVerificationCodeCommand1MutationOptions = getCheckPhoneVerificationCodeCommand1MutationOptions;
-/**
- * @summary Verify the phone code sent to user
- */
-const useCheckPhoneVerificationCodeCommand1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getCheckPhoneVerificationCodeCommand1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useCheckPhoneVerificationCodeCommand1 = useCheckPhoneVerificationCodeCommand1;
 /**
  * Retrieves a random selection of users based on specified criteria
  * @summary Fetch random list of users, with basic data
@@ -4045,30 +2950,6 @@ const fetchRandomUsers1 = (userListRequest, signal) => {
     });
 };
 exports.fetchRandomUsers1 = fetchRandomUsers1;
-const getFetchRandomUsers1MutationOptions = (options) => {
-    const mutationKey = ["fetchRandomUsers1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.fetchRandomUsers1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getFetchRandomUsers1MutationOptions = getFetchRandomUsers1MutationOptions;
-/**
- * @summary Fetch random list of users, with basic data
- */
-const useFetchRandomUsers1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getFetchRandomUsers1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useFetchRandomUsers1 = useFetchRandomUsers1;
 /**
  * Gets detailed user information by user ID
  * @summary Fetch user detail according to its id
@@ -4153,30 +3034,6 @@ const save = (skilledUser, signal) => {
     });
 };
 exports.save = save;
-const getSaveMutationOptions = (options) => {
-    const mutationKey = ["save"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.save)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSaveMutationOptions = getSaveMutationOptions;
-/**
- * @summary Save the data of user in the system
- */
-const useSave = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSaveMutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSave = useSave;
 /**
  * Gets detailed information for multiple users by their IDs
  * @summary Fetch multiple user detail according to its ids
@@ -4337,30 +3194,6 @@ const register1 = (skilledUser, params, signal) => {
     });
 };
 exports.register1 = register1;
-const getRegister1MutationOptions = (options) => {
-    const mutationKey = ["register1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data, params } = props ?? {};
-        return (0, exports.register1)(data, params);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getRegister1MutationOptions = getRegister1MutationOptions;
-/**
- * @summary Register new user in the system
- */
-const useRegister1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getRegister1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useRegister1 = useRegister1;
 /**
  * Sends an activation link to the user's email for account verification
  * @summary Request activation link
@@ -4382,30 +3215,6 @@ const requestActivationLink1 = (requestActivationLink1Body, signal) => {
     });
 };
 exports.requestActivationLink1 = requestActivationLink1;
-const getRequestActivationLink1MutationOptions = (options) => {
-    const mutationKey = ["requestActivationLink1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.requestActivationLink1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getRequestActivationLink1MutationOptions = getRequestActivationLink1MutationOptions;
-/**
- * @summary Request activation link
- */
-const useRequestActivationLink1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getRequestActivationLink1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useRequestActivationLink1 = useRequestActivationLink1;
 /**
  * Searches for users matching the specified filter criteria
  * @summary Search users with specified filters
@@ -4420,30 +3229,6 @@ const searchUsers1 = (userFilterRequest, signal) => {
     });
 };
 exports.searchUsers1 = searchUsers1;
-const getSearchUsers1MutationOptions = (options) => {
-    const mutationKey = ["searchUsers1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { data } = props ?? {};
-        return (0, exports.searchUsers1)(data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSearchUsers1MutationOptions = getSearchUsers1MutationOptions;
-/**
- * @summary Search users with specified filters
- */
-const useSearchUsers1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSearchUsers1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSearchUsers1 = useSearchUsers1;
 const sendPayedSusbscribersAlert1 = (signal) => {
     return (0, custom_instance_1.customInstance)({
         url: `/users/weekly-payed-subscribers-alert`,
@@ -4483,30 +3268,6 @@ const sendPhoneVerificationCodeCommand1 = (userId, phoneCodeRequestResource, sig
     });
 };
 exports.sendPhoneVerificationCodeCommand1 = sendPhoneVerificationCodeCommand1;
-const getSendPhoneVerificationCodeCommand1MutationOptions = (options) => {
-    const mutationKey = ["sendPhoneVerificationCodeCommand1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { userId, data } = props ?? {};
-        return (0, exports.sendPhoneVerificationCodeCommand1)(userId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getSendPhoneVerificationCodeCommand1MutationOptions = getSendPhoneVerificationCodeCommand1MutationOptions;
-/**
- * @summary Send a code to the previously saved phone number of the user
- */
-const useSendPhoneVerificationCodeCommand1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getSendPhoneVerificationCodeCommand1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useSendPhoneVerificationCodeCommand1 = useSendPhoneVerificationCodeCommand1;
 /**
  * Returns all skills associated with a user
  * @summary Retrieve user skills
@@ -4558,30 +3319,6 @@ const addUserSkills1 = (userId, userSkill, signal) => {
     });
 };
 exports.addUserSkills1 = addUserSkills1;
-const getAddUserSkills1MutationOptions = (options) => {
-    const mutationKey = ["addUserSkills1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { userId, data } = props ?? {};
-        return (0, exports.addUserSkills1)(userId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getAddUserSkills1MutationOptions = getAddUserSkills1MutationOptions;
-/**
- * @summary Add user skills
- */
-const useAddUserSkills1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getAddUserSkills1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useAddUserSkills1 = useAddUserSkills1;
 /**
  * Returns all endorsements for a specific user skill
  * @summary Retrieve skill endorsements
@@ -4634,27 +3371,3 @@ const endorseUserSkill1 = (userId, skillId, skillEndorsement, signal) => {
     });
 };
 exports.endorseUserSkill1 = endorseUserSkill1;
-const getEndorseUserSkill1MutationOptions = (options) => {
-    const mutationKey = ["endorseUserSkill1"];
-    const { mutation: mutationOptions } = options
-        ? options.mutation &&
-            "mutationKey" in options.mutation &&
-            options.mutation.mutationKey
-            ? options
-            : { ...options, mutation: { ...options.mutation, mutationKey } }
-        : { mutation: { mutationKey } };
-    const mutationFn = (props) => {
-        const { userId, skillId, data } = props ?? {};
-        return (0, exports.endorseUserSkill1)(userId, skillId, data);
-    };
-    return { mutationFn, ...mutationOptions };
-};
-exports.getEndorseUserSkill1MutationOptions = getEndorseUserSkill1MutationOptions;
-/**
- * @summary Endorse a user skill
- */
-const useEndorseUserSkill1 = (options, queryClient) => {
-    const mutationOptions = (0, exports.getEndorseUserSkill1MutationOptions)(options);
-    return (0, react_query_1.useMutation)(mutationOptions, queryClient);
-};
-exports.useEndorseUserSkill1 = useEndorseUserSkill1;
