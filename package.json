@@ -1,0 +1,37 @@
+{
+  "name": "hallocasa-api-client-2",
+  "version": "1.0.0",
+  "description": "TypeScript client for Hallocasa API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "generate": "orval",
+    "build": "tsc",
+    "clean": "rm -rf dist src/api/hallocasa.ts src/api/model",
+    "prebuild": "npm run generate",
+    "dev": "npm run generate -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hallocasa",
+    "api",
+    "client",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "orval": "^7.3.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.79.0",
+    "axios": "^1.7.9"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
